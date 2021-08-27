@@ -66,7 +66,8 @@ def main():
         new_doc = {}
         new_doc.update({'text_boxes':doc})
 
-        classes = ['O', 'DATE_SALE', 'ADDRESS_SELLER', 'DOC_NR', 'DATE_CREATION', 'ADDRESS_CONTRACTOR', 'VAT_ID_CONTRACTOR', 'PAYMENT_METHOD', 'VAT_ID_SELLER', 'PAYMENT_BANK_NR', 'TOTAL_PAY', 'TOTAL_CURRENCY', 'TOTAL_TAX', 'TOTAL_WITH_TAX', 'TOTAL_WITHOUT_TAX', 'DATE_PAYMENT', 'NAME_SELLER', 'NAME_CONTRACTOR']
+        classes = ['SENDER_NAME', 'SENDER_ADDRESS', 'RECEIVER_NAME', 'RECEIVER_ADDRESS', 'INVOICE_DATE', 'INVOICE_NUMBER',
+                        'TOTAL_AMOUNT']
         fields = []
         for cl in classes:
             new_field = {"field_name": cl, "value_id": [], "value_text":[], "key_id":[], "key_text":[]}
@@ -78,6 +79,8 @@ def main():
         json_obj = json.dumps(new_doc, indent = 4, ensure_ascii=False)
         
         args.output.write(json_obj)
+
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
 if __name__ == "__main__":
