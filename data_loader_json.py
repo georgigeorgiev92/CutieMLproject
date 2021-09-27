@@ -1,11 +1,13 @@
+# -*- coding: utf-8 -*-
+# 2019-01 
+# written by Xiaohui Zhao
+# xiaohui.zhao@outlook.com
 from os import walk
 from os.path import isfile, join
 import csv, re, random, json
 from collections import defaultdict
-import numpy as np
 
-np_load_old = np.load
-np.load = lambda *a, **k: np_load_old(*a, allow_pickle=True, **k)
+import numpy as np
 import tensorflow as tf
 import tokenization
 import cv2
@@ -35,16 +37,13 @@ class DataLoader():
     grid tables producer
     """
 
-    def __init__(self, params, update_dict=True, load_dictionary=False, data_split=0.75):
+    def __init__(self, params, classes=None, update_dict=True, load_dictionary=False, data_split=0.75):
         self.random = False
         self.data_laundry = False
         self.encoding_factor = 1  # ensures the size (rows/cols) of grid table compat with the network
-        self.classes = ['SENDER_NAME', 'SENDER_ADDRESS', 'RECEIVER_NAME', 'RECEIVER_ADDRESS', 'INVOICE_DATE', 'INVOICE_NUMBER',
-                        'TOTAL_AMOUNT']
-        # self.classes = ['DontCare', 'Table'] # for table
-        # self.classes = ['DontCare', 'Column0', 'Column1', 'Column2', 'Column3', 'Column4', 'Column5'] # for column
-        # self.classes = ['DontCare', 'Column']
-        # self.classes = ['DontCare', 'VendorName', 'VendorTaxID', 'InvoiceDate', 'InvoiceNumber', 'ExpenseAmount', 'BaseAmount', 'TaxAmount', 'TaxRate'] # for Spanish project
+
+        self.classes = ['SENDER_NAME', 'SENDER_ADDRESS', 'RECEIVER_NAME', 'RECEIVER_ADDRESS', 'INVOICE_DATE',
+                             'INVOICE_NUMBER', 'TOTAL_AMOUNT']
 
         self.doc_path = params.doc_path
         self.doc_test_path = params.test_path
@@ -85,9 +84,9 @@ class DataLoader():
         self.load_dictionary = load_dictionary  # load dictionary from file rather than start from empty
         self.dict_path = params.load_dict_from_path if load_dictionary else params.dict_path
         if self.load_dictionary:
-            self.dictionary = np.load(self.dict_path + '_dictionary.npy').item()
-            self.word_to_index = np.load(self.dict_path + '_word_to_index.npy').item()
-            self.index_to_word = np.load(self.dict_path + '_index_to_word.npy').item()
+            self.dictionary = np.load(self.dict_path + '_dictionary.npy', allow_pickle=True).item()
+            self.word_to_index = np.load(self.dict_path + '_word_to_index.npy', allow_pickle=True).item()
+            self.index_to_word = np.load(self.dict_path + '_index_to_word.npy', allow_pickle=True).item()
         else:
             self.dictionary = {'[PAD]': 0,
                                '[UNK]': 0}  # word/counts. to be updated in self.load_data() and self._update_docs_dictionary()
@@ -104,7 +103,7 @@ class DataLoader():
         # TBD: build a special cared dictionary
         self.special_dict = {'*', '='}  # map texts to specific tokens
 
-        ## 1.1> load words and their location/class as training/validation docs and labels
+        ## 1.1> load words and their location/class as training/validation docs and labels 
         self.training_doc_files = self._get_filenames(self.doc_path)
         self.training_docs, self.training_labels = self.load_data(self.training_doc_files,
                                                                   update_dict=update_dict)  # TBD: optimize the update dict flag
@@ -362,7 +361,7 @@ class DataLoader():
                     else:
                         iou = min(h * w, roi_h * roi_w) / max(h * w, roi_h * roi_w)
 
-                    # TBD: add jittering augmentation method
+                    # TBD: add jittering augmentation method  
                     if use_jittering:
                         pass
                     if iou > max_iou:
@@ -658,7 +657,7 @@ class DataLoader():
         """
         label_dressed in format:
         {file_id: {class: [{'key_id':[], 'value_id':[], 'key_text':'', 'value_text':''}, ] } }
-        load doc words with location and class returned in format:
+        load doc words with location and class returned in format: 
         [[file_name, text, word_id, [x_left, y_top, x_right, y_bottom], [left, top, right, bottom], max_row_words, max_col_words] ]
         """
         label_dressed = {}
@@ -911,11 +910,9 @@ class DataLoader():
             return 0, 0  # 0 is of class type 'DontCare'
         print("No matched labels found for {}".format(file_name))
 
-
-# The _dress_text function uses the vocab.txt to look for known words and uses it for word piece tokenization. Refer BERT model.
     def _dress_text(self, text, update_dict):
         """
-        three cases covered:
+        three cases covered: 
         alphabetic string, numeric string, special character
         """
         string = text if self.text_case else text.lower()
