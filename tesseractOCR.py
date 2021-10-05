@@ -61,7 +61,10 @@ def main():
     with Image.open(args.input) as img:
         # width, height = img.size
         doc = pytesseract.image_to_data(img, lang=args.language, config='--psm 11')  # custom_config
-
+        # left is the distance from the upper-left corner of the bounding box, to the left border of the image.
+        # top is the distance from the upper-left corner of the bounding box, to the top border of the image.
+        # width and height are the width and height of the bounding box.
+        # conf is the model's confidence for the prediction for the word within that bounding box. If conf is -1, that means that the corresponding bounding box contains a block of text, rather than just a single word.
         doc = readTSV(doc)
 
         new_doc = {}
@@ -74,7 +77,7 @@ def main():
         for cl in classes:
             new_field = {"field_name": cl, "value_id": [], "value_text": [], "key_id": [], "key_text": []}
             fields.append(new_field)
-        new_doc.update({'fileds': fields})
+        new_doc.update({'fields': fields})
 
         new_doc.update({"global_attributes": {"file_id": args.input}})
 
