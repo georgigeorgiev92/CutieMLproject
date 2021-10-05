@@ -19,7 +19,7 @@ parser.add_argument('--use_cutie2', type=bool, default=True) # True to read imag
 parser.add_argument('--doc_path', type=str, default='invoice_data')
 parser.add_argument('--save_prefix', type=str, default='SROIE', help='prefix for ckpt') # TBD: save log/models with prefix
 #parser.add_argument('--save_prefix', type=str, default='TEST', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='') # leave empty if no test data provided
+parser.add_argument('--test_path', type=str, default='test') # leave empty if no test data provided
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
@@ -29,11 +29,11 @@ parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph'
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='dict/SROIE') # 40000 or 20000TC or table
+parser.add_argument('--load_dict_from_path', type=str, default='dict/40000') # 40000 or 20000TC or table
 parser.add_argument('--tokenize', type=bool, default=True) # tokenize input text
 parser.add_argument('--text_case', type=bool, default=True) # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
-parser.add_argument('--dict_path', type=str, default='dict/---') # not used if load_dict is True
+parser.add_argument('--dict_path', type=str, default='dict/newtest') # not used if load_dict is True
 
 # data manipulation
 parser.add_argument('--segment_grid', type=bool, default=False) # segment grid into two parts if grid is larger than cols_target
