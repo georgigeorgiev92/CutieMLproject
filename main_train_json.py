@@ -22,7 +22,7 @@ parser.add_argument('--save_prefix', type=str, default='SROIE', help='prefix for
 parser.add_argument('--test_path', type=str, default='test') # leave empty if no test data provided
 
 # ckpt
-parser.add_argument('--restore_ckpt', type=bool, default=False)
+parser.add_argument('--restore_ckpt', type=bool, default=True)
 parser.add_argument('--restore_bertembedding_only', type=bool, default=False) # effective when restore_ckpt is True
 parser.add_argument('--embedding_file', type=str, default='..\\graph\\bert\\multi_cased_L-12_H-768_A-12\\bert_model.ckpt')
 parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph')
@@ -54,7 +54,7 @@ parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
 parser.add_argument('--batch_size', type=int, default=1)
-parser.add_argument('--iterations', type=int, default=500)#40000
+parser.add_argument('--iterations', type=int, default=1000)#40000
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
 parser.add_argument('--lr_decay_factor', type=float, default=0.1)
@@ -136,7 +136,7 @@ if __name__ == '__main__':
     for _ in range(2000):
         a = data_loader.next_batch()
         b = data_loader.fetch_validation_data()
- #       c = data_loader.fetch_test_data()
+        c = data_loader.fetch_test_data()
 
     # model
     if params.use_cutie2:

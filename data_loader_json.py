@@ -10,7 +10,7 @@ import tensorflow as tf
 import tokenization
 import cv2
 
-DEBUG = True  # True to show grid as image
+DEBUG = False  # True to show grid as image
 
 import unicodedata
 
