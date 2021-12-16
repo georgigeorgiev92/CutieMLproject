@@ -22,10 +22,13 @@ parser.add_argument('--save_prefix', type=str, default='SROIE', help='prefix for
 parser.add_argument('--test_path', type=str, default='test') # leave empty if no test data provided
 
 # ckpt
-parser.add_argument('--restore_ckpt', type=bool, default=True)
+parser.add_argument('--restore_ckpt', type=bool, default=False)
 parser.add_argument('--restore_bertembedding_only', type=bool, default=False) # effective when restore_ckpt is True
 parser.add_argument('--embedding_file', type=str, default='..\\graph\\bert\\multi_cased_L-12_H-768_A-12\\bert_model.ckpt')
 parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph')
+#throws error without restore file path
+parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80c80)_iter_1000.ckpt')
+
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
@@ -304,7 +307,7 @@ if __name__ == '__main__':
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
-                recall = sum(recalls) / len(recalls)
+                recall = float(sum(recalls) / len(recalls))
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
                 validation_recall += [recall]
@@ -362,7 +365,7 @@ if __name__ == '__main__':
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
-                recall = sum(recalls) / len(recalls)
+                recall = float(sum(recalls)) / float(len(recalls))
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
                 test_recall += [recall]

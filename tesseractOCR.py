@@ -71,7 +71,7 @@ def main():
         new_doc.update({'text_boxes': doc})
 
         classes = ['SENDER_NAME', 'SENDER_ADDRESS', 'RECEIVER_NAME', 'RECEIVER_ADDRESS', 'INVOICE_DATE',
-                   'INVOICE_NUMBER',
+                   'INVOICE_NUMBER', 'SENDER_NAME',
                    'TOTAL_AMOUNT']
         fields = []
         for cl in classes:

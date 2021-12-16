@@ -285,11 +285,11 @@ def cal_accuracy_table(data_loader, grid_table, gt_classes, model_output_val, la
         for c in range(1, data_loader.num_classes):
             label_rows, label_cols = np.where(labels == c)
             logit_rows, logit_cols = np.where(logits[:,:,c] > c_threshold)
-            if min(label_rows) == min(logit_rows) and max(label_cols) == max(logit_cols):
+            if min(label_rows, default=0) == min(logit_rows, default=0) and max(label_cols, default=0) == max(logit_cols, default=0):
                 num_correct_strict += 1
                 num_correct_soft += 1
                 num_correct += 1
-            if min(label_rows) > min(logit_rows) and max(label_cols) < max(logit_cols):
+            if min(label_rows, default=0) > min(logit_rows, default=0) and max(label_cols, default=0) < max(logit_cols, default=0):
                 num_correct_soft += 1
                 num_correct += 1
             
