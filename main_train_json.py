@@ -1,8 +1,12 @@
+# written by Xiaohui Zhao
+# 2018-12
+# xh.zhao@outlook.com
 import tensorflow as tf
 import numpy as np
 import argparse, os
 import timeit
 from pprint import pprint
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 from data_loader_json import DataLoader
@@ -12,82 +16,81 @@ from model_cutie_aspp import CUTIERes as CUTIEv1
 from model_cutie2_aspp import CUTIE2 as CUTIEv2
 
 parser = argparse.ArgumentParser(description='CUTIE parameters')
-
 # data
-parser.add_argument('--use_cutie2', type=bool, default=True) # True to read image from doc_path
-#parser.add_argument('--doc_path', type=str, default='data/SROIE')
+parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
 parser.add_argument('--doc_path', type=str, default='invoice_data')
-parser.add_argument('--save_prefix', type=str, default='SROIE', help='prefix for ckpt') # TBD: save log/models with prefix
-#parser.add_argument('--save_prefix', type=str, default='TEST', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='test') # leave empty if no test data provided
+parser.add_argument('--save_prefix', type=str, default='TEST2', help='prefix for ckpt')
+parser.add_argument('--test_path', type=str, default='test')  # leave empty if no test data provided
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
-parser.add_argument('--restore_bertembedding_only', type=bool, default=False) # effective when restore_ckpt is True
-parser.add_argument('--embedding_file', type=str, default='..\\graph\\bert\\multi_cased_L-12_H-768_A-12\\bert_model.ckpt')
+parser.add_argument('--restore_bertembedding_only', type=bool, default=False)  # effective when restore_ckpt is True
+parser.add_argument('--embedding_file', type=str, default='../graph/bert/multi_cased_L-12_H-768_A-12/bert_model.ckpt')
 parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph')
-#throws error without restore file path
-parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80c80)_iter_1000.ckpt')
-
+parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80c80)_iter_40000.ckpt')
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='dict/40000') # 40000 or 20000TC or table
-parser.add_argument('--tokenize', type=bool, default=True) # tokenize input text
-parser.add_argument('--text_case', type=bool, default=True) # case sensitive
+parser.add_argument('--load_dict_from_path', type=str, default='dict/40000')  # 40000 or 20000TC or table
+parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
+parser.add_argument('--text_case', type=bool, default=True)  # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
-parser.add_argument('--dict_path', type=str, default='dict/newtest') # not used if load_dict is True
+parser.add_argument('--dict_path', type=str, default='dict/40000')  # not used if load_dict is True
 
 # data manipulation
-parser.add_argument('--segment_grid', type=bool, default=False) # segment grid into two parts if grid is larger than cols_target
+parser.add_argument('--segment_grid', type=bool,
+                    default=False)  # segment grid into two parts if grid is larger than cols_target
 parser.add_argument('--rows_segment', type=int, default=72)
 parser.add_argument('--cols_segment', type=int, default=72)
-parser.add_argument('--augment_strategy', type=int, default=1) # 1 for increasing grid shape size, 2 for gaussian around target shape
+parser.add_argument('--augment_strategy', type=int,
+                    default=1)  # 1 for increasing grid shape size, 2 for gaussian around target shape
 parser.add_argument('--positional_mapping_strategy', type=int, default=1)
 parser.add_argument('--rows_target', type=int, default=64)
 parser.add_argument('--cols_target', type=int, default=64)
-parser.add_argument('--rows_ulimit', type=int, default=80) # used when data augmentation is true
+parser.add_argument('--rows_ulimit', type=int, default=80)  # used when data augmentation is true
 parser.add_argument('--cols_ulimit', type=int, default=80)
-parser.add_argument('--fill_bbox', type=bool, default=False) # fill bbox with dict_id / label_id
+parser.add_argument('--fill_bbox', type=bool, default=False)  # fill bbox with dict_id / label_id
 
-parser.add_argument('--data_augmentation_extra', type=bool, default=True) # randomly expand rows/cols
+parser.add_argument('--data_augmentation_extra', type=bool, default=True)  # randomly expand rows/cols
 parser.add_argument('--data_augmentation_dropout', type=float, default=1)
 parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=1)
-parser.add_argument('--iterations', type=int, default=1000)#40000
+parser.add_argument('--batch_size', type=int, default=5)
+parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
 parser.add_argument('--lr_decay_factor', type=float, default=0.1)
 
 # loss optimization
 parser.add_argument('--hard_negative_ratio', type=int, help='the ratio between negative and positive losses', default=3)
-parser.add_argument('--use_ghm', type=int, default=0) # 1 to use GHM, 0 to not use
-parser.add_argument('--ghm_bins', type=int, default=30) # to be tuned
-parser.add_argument('--ghm_momentum', type=int, default=0) # 0 / 0.75
+parser.add_argument('--use_ghm', type=int, default=0)  # 1 to use GHM, 0 to not use
+parser.add_argument('--ghm_bins', type=int, default=30)  # to be tuned
+parser.add_argument('--ghm_momentum', type=int, default=0)  # 0 / 0.75
 
 # log
 parser.add_argument('--log_path', type=str, default='..\\CutieMLproject\\graph\\log')
 parser.add_argument('--log_disp_step', type=int, default=200)
-parser.add_argument('--log_save_step', type=int, default=100)
+parser.add_argument('--log_save_step', type=int, default=200)
 parser.add_argument('--validation_step', type=int, default=200)
 parser.add_argument('--test_step', type=int, default=400)
-parser.add_argument('--ckpt_save_step', type=int, default=100)
+parser.add_argument('--ckpt_save_step', type=int, default=1000)
 
 # model
-parser.add_argument('--embedding_size', type=int, default=128) # not used for bert embedding which has 768 as default
+parser.add_argument('--embedding_size', type=int, default=256)  # not used for bert embedding which has 768 as default
 parser.add_argument('--weight_decay', type=float, default=0.0005)
 parser.add_argument('--eps', type=float, default=1e-6)
 
 # inference
-#parser.add_argument('--c_threshold', type=float, default=0.5)
+# parser.add_argument('--c_threshold', type=float, default=0.5)
 params = parser.parse_args()
 
-edges = [float(x)/params.ghm_bins for x in range(params.ghm_bins+1)]
+edges = [float(x) / params.ghm_bins for x in range(params.ghm_bins + 1)]
 edges[-1] += params.eps
 acc_sum = [0.0 for _ in range(params.ghm_bins)]
+
+
 def calc_ghm_weights(logits, labels):
     """
     calculate gradient harmonizing mechanism weights
@@ -98,21 +101,21 @@ def calc_ghm_weights(logits, labels):
 
     logits_flat = logits.reshape([-1])
     labels_flat = labels.reshape([-1])
-    arr = [0 for _ in range(len(labels_flat)*num_classes)]
-    for i,l in enumerate(labels_flat):
-        arr[i*num_classes + l] = 1
+    arr = [0 for _ in range(len(labels_flat) * num_classes)]
+    for i, l in enumerate(labels_flat):
+        arr[i * num_classes + l] = 1
     labels_flat = np.array(arr)
 
-    grad = abs(logits_flat - labels_flat) # equation for logits from the sigmoid activation
+    grad = abs(logits_flat - labels_flat)  # equation for logits from the sigmoid activation
 
     weights = np.ones(logits_flat.shape)
     N = shape[0] * shape[1] * shape[2] * shape[3]
     M = 0
     for i in range(bins):
-        idxes = np.multiply(grad>=edges[i], grad<edges[i+1])
+        idxes = np.multiply(grad >= edges[i], grad < edges[i + 1])
         num_in_bin = np.sum(idxes)
         if num_in_bin > 0:
-            acc_sum[i] = momentum * acc_sum[i] + (1-momentum) * num_in_bin
+            acc_sum[i] = momentum * acc_sum[i] + (1 - momentum) * num_in_bin
             weights[np.where(idxes)] = N / acc_sum[i]
             M += 1
     if M > 0:
@@ -120,14 +123,17 @@ def calc_ghm_weights(logits, labels):
 
     return weights.reshape(shape)
 
+
 def save_ckpt(sess, path, save_prefix, data_loader, network, num_words, num_classes, iter):
     ckpt_path = os.path.join(path, save_prefix)
     if not os.path.exists(ckpt_path):
         os.makedirs(ckpt_path)
     filename = os.path.join(ckpt_path, network.name + '_d{:d}c{:d}(r{:d}c{:d})_iter_{:d}'.
-                            format(num_words, num_classes, data_loader.rows_ulimit, data_loader.cols_ulimit, iter) + '.ckpt')
+                            format(num_words, num_classes, data_loader.rows_ulimit, data_loader.cols_ulimit,
+                                   iter) + '.ckpt')
     ckpt_saver.save(sess, filename)
     print('\nCheckpoint saved to: {:s}\n'.format(filename))
+
 
 if __name__ == '__main__':
     pprint(params)
@@ -139,7 +145,7 @@ if __name__ == '__main__':
     for _ in range(2000):
         a = data_loader.next_batch()
         b = data_loader.fetch_validation_data()
-        c = data_loader.fetch_test_data()
+    #    c = data_loader.fetch_test_data()
 
     # model
     if params.use_cutie2:
@@ -170,7 +176,7 @@ if __name__ == '__main__':
         for dim in shape:
             variable_parameters *= dim.value
         total_parameters += variable_parameters
-    print(network.name, ': ', total_parameters/1000/1000, 'M parameters \n')
+    print(network.name, ': ', total_parameters / 1000 / 1000, 'M parameters \n')
 
     # training
     loss_curve = []
@@ -213,22 +219,23 @@ if __name__ == '__main__':
                     ckpt_saver.restore(sess, ckpt_path)
                     print('Restored from {}'.format(ckpt_path))
                     stem = os.path.splitext(os.path.basename(ckpt_path))[0]
-                    #iter_start = int(stem.split('_')[-1]) - 1
+                    # iter_start = int(stem.split('_')[-1]) - 1
                     sess.run(global_step.assign(iter_start))
                 except:
                     raise Exception('Check your pretrained {:s}'.format(ckpt_path))
 
         # iterations
         print(" Let's roll! ")
-        for iter in range(iter_start, params.iterations+1):
+        for iter in range(iter_start, params.iterations + 1):
             timer_start = timeit.default_timer()
 
             # learning rate decay
-            if iter!=0 and iter%params.lr_decay_step==0:
-                sess.run(tf.assign(lr, lr.eval()*params.lr_decay_factor))
+            if iter != 0 and iter % params.lr_decay_step == 0:
+                sess.run(tf.assign(lr, lr.eval() * params.lr_decay_factor))
 
             data = data_loader.next_batch()
-            feeds = [network.data_grid, network.gt_classes, network.data_image, network.ps_1d_indices, network.ghm_weights]
+            feeds = [network.data_grid, network.gt_classes, network.data_image, network.ps_1d_indices,
+                     network.ghm_weights]
             fetches = [model_loss, regularization_loss, total_loss, summary_op, train_dummy, model_logits, model_output]
             h = sess.partial_run_setup(fetches, feeds)
 
@@ -255,34 +262,38 @@ if __name__ == '__main__':
                 network.ghm_weights: ghm_weights,
             }
             fetches = [model_loss, regularization_loss, total_loss, summary_op, train_dummy]
-            (model_loss_val, regularization_loss_val, total_loss_val, summary_str, _) =\
+            (model_loss_val, regularization_loss_val, total_loss_val, summary_str, _) = \
                 sess.partial_run(h, fetches=fetches, feed_dict=feed_dict)
 
             # calculate training accuracy and display results
-            if iter%params.log_disp_step == 0:
+            if iter % params.log_disp_step == 0:
                 timer_stop = timeit.default_timer()
-                print('\t >>time per step: %.2fs <<'%(timer_stop - timer_start))
+                print('\t >>time per step: %.2fs <<' % (timer_stop - timer_start))
 
                 recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(data['grid_table']),
-                                                       np.array(data['gt_classes']), model_output_val,
-                                                       np.array(data['label_mapids']), np.array(data['bbox_mapids']))
+                                                                 np.array(data['gt_classes']), model_output_val,
+                                                                 np.array(data['label_mapids']),
+                                                                 np.array(data['bbox_mapids']))
                 loss_curve += [total_loss_val]
                 training_recall += [recall]
                 training_acc_strict += [acc_strict]
                 training_acc_soft += [acc_soft]
 
-                #print(res.decode())
-                print('\nIter: %d/%d, total loss: %.4f, model loss: %.4f, regularization loss: %.4f'%\
+                # print(res.decode())
+                print('\nIter: %d/%d, total loss: %.4f, model loss: %.4f, regularization loss: %.4f' % \
                       (iter, params.iterations, total_loss_val, model_loss_val, regularization_loss_val))
                 print('LOSS CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                  format(i*params.log_disp_step,w) for i,w in enumerate(loss_curve)]))
+                                                 format(i * params.log_disp_step, w) for i, w in
+                                                  enumerate(loss_curve)]))
                 print('TRAINING ACC CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                  format(i*params.log_disp_step,w) for i,w in enumerate(training_acc_strict)]))
-                print('TRAINING ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f)'\
-                      %(recall, acc_strict, acc_soft, max(training_recall), max(training_acc_strict), max(training_acc_soft)))
+                                                         format(i * params.log_disp_step, w) for i, w in
+                                                          enumerate(training_acc_strict)]))
+                print('TRAINING ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f)' \
+                      % (recall, acc_strict, acc_soft, max(training_recall), max(training_acc_strict),
+                         max(training_acc_soft)))
 
             # calculate validation accuracy and display results
-            if iter%params.validation_step == 0 and len(data_loader.validation_docs):
+            if iter % params.validation_step == 0 and len(data_loader.validation_docs):
                 recalls, accs_strict, accs_soft = [], [], []
                 for _ in range(len(data_loader.validation_docs)):
                     data = data_loader.fetch_validation_data()
@@ -301,42 +312,48 @@ if __name__ == '__main__':
                     fetches = [model_output]
                     [model_output_val] = sess.run(fetches=fetches, feed_dict=feed_dict)
                     recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
-                                                           np.array(gt_classes), model_output_val,
-                                                           np.array(data['label_mapids']), np.array(data['bbox_mapids']))
+                                                                     np.array(gt_classes), model_output_val,
+                                                                     np.array(data['label_mapids']),
+                                                                     np.array(data['bbox_mapids']))
                     recalls += [recall]
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
-                recall = float(sum(recalls) / len(recalls))
+                recall = sum(recalls) / len(recalls)
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
                 validation_recall += [recall]
                 validation_acc_strict += [acc_strict]
                 validation_acc_soft += [acc_soft]
-                #print(res.decode()) # show res from the last execution of the while loop
+                # print(res.decode()) # show res from the last execution of the while loop
 
                 print('VALIDATION ACC (STRICT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                  format(i*params.validation_step,w) for i,w in enumerate(validation_acc_strict)]))
+                                                                    format(i * params.validation_step, w) for i, w in
+                                                                     enumerate(validation_acc_strict)]))
                 print('VALIDATION ACC (SOFT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                  format(i*params.validation_step,w) for i,w in enumerate(validation_acc_soft)]))
+                                                                  format(i * params.validation_step, w) for i, w in
+                                                                   enumerate(validation_acc_soft)]))
                 print('TRAINING RECALL CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
-                                  format(i*params.log_disp_step,w) for i,w in enumerate(training_recall)]))
+                                                            format(i * params.log_disp_step, w) for i, w in
+                                                             enumerate(training_recall)]))
                 print('VALIDATION RECALL CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
-                                  format(i*params.validation_step,w) for i,w in enumerate(validation_recall)]))
+                                                              format(i * params.validation_step, w) for i, w in
+                                                               enumerate(validation_recall)]))
 
                 idx = np.argmax(validation_acc_strict)
                 print('VALIDATION Statistic %d(%d) (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f) \n'
-                      %(iter, idx*params.validation_step, recall, acc_strict, acc_soft,
-                        validation_recall[idx], validation_acc_strict[idx], validation_acc_soft[idx]))
+                      % (iter, idx * params.validation_step, recall, acc_strict, acc_soft,
+                         validation_recall[idx], validation_acc_strict[idx], validation_acc_soft[idx]))
 
                 # save best performance checkpoint
-                if iter>=params.ckpt_save_step and validation_acc_strict[-1] > max(validation_acc_strict[:-1]+[0]):
+                if iter >= params.ckpt_save_step and validation_acc_strict[-1] > max(validation_acc_strict[:-1] + [0]):
                     # save as iter+1 to indicate best validation
-                    save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes, iter+1)
+                    save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes,
+                              iter + 1)
                     print('\nBest up-to-date performance validation checkpoint saved.\n')
 
             # calculate validation accuracy and display results
-            if params.test_path!='' and iter%params.test_step == 0 and len(data_loader.test_docs):
+            if params.test_path != '' and iter % params.test_step == 0 and len(data_loader.test_docs):
 
                 recalls, accs_strict, accs_soft = [], [], []
                 while True:
@@ -345,7 +362,6 @@ if __name__ == '__main__':
                         break
                     grid_tables = data['grid_table']
                     gt_classes = data['gt_classes']
-
 
                     feed_dict = {
                         network.data_grid: grid_tables,
@@ -359,13 +375,14 @@ if __name__ == '__main__':
                     fetches = [model_output]
                     [model_output_val] = sess.run(fetches=fetches, feed_dict=feed_dict)
                     recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
-                                                           np.array(gt_classes), model_output_val,
-                                                           np.array(data['label_mapids']), np.array(data['bbox_mapids']))
+                                                                     np.array(gt_classes), model_output_val,
+                                                                     np.array(data['label_mapids']),
+                                                                     np.array(data['bbox_mapids']))
                     recalls += [recall]
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
-                recall = float(sum(recalls)) / float(len(recalls))
+                recall = sum(recalls) / len(recalls)
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
                 test_recall += [recall]
@@ -373,27 +390,32 @@ if __name__ == '__main__':
                 test_acc_soft += [acc_soft]
                 idx = np.argmax(test_acc_strict)
                 print('\n TEST ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f) \n'
-                      %(recall, acc_strict, acc_soft, test_recall[idx], test_acc_strict[idx], test_acc_soft[idx]))
+                      % (recall, acc_strict, acc_soft, test_recall[idx], test_acc_strict[idx], test_acc_soft[idx]))
                 print('TEST ACC (STRICT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                format(i*params.test_step,w) for i,w in enumerate(test_acc_strict)]))
+                                                              format(i * params.test_step, w) for i, w in
+                                                               enumerate(test_acc_strict)]))
                 print('TEST ACC (SOFT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                format(i*params.test_step,w) for i,w in enumerate(test_acc_soft)]))
+                                                            format(i * params.test_step, w) for i, w in
+                                                             enumerate(test_acc_soft)]))
                 print('TEST RECALL CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
-                                format(i*params.test_step,w) for i,w in enumerate(test_recall)]))
+                                                        format(i * params.test_step, w) for i, w in
+                                                         enumerate(test_recall)]))
 
                 # save best performance checkpoint
-                if iter>=params.ckpt_save_step and test_acc_strict[-1] > max(test_acc_strict[:-1]+[0]):
+                if iter >= params.ckpt_save_step and test_acc_strict[-1] > max(test_acc_strict[:-1] + [0]):
                     # save as iter+1 to indicate best test
-                    save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes, iter+2)
+                    save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes,
+                              iter + 2)
                     print('\nBest up-to-date performance test checkpoint saved.\n')
 
             # save checkpoints
-            if iter>=params.log_save_step and iter%params.ckpt_save_step == 0:
-                save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes, iter)
+            if iter >= params.log_save_step and iter % params.ckpt_save_step == 0:
+                save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes,
+                          iter)
 
             # save logs
-            if iter>=params.log_save_step and iter%params.log_save_step == 0:
-                summary_writer.add_summary(summary_str, iter+1)
+            if iter >= params.log_save_step and iter % params.log_save_step == 0:
+                summary_writer.add_summary(summary_str, iter + 1)
 
     pprint(params)
     pprint('Data rows/cols:{},{}'.format(data_loader.rows, data_loader.cols))
