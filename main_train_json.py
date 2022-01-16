@@ -7,7 +7,7 @@ import argparse, os
 import timeit
 from pprint import pprint
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 from data_loader_json import DataLoader
 from utils import *
@@ -18,20 +18,20 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='invoice_data')
-parser.add_argument('--save_prefix', type=str, default='TEST2', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='test')  # leave empty if no test data provided
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/invoice_data')
+parser.add_argument('--save_prefix', type=str, default='TEST', help='prefix for ckpt')
+parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
 parser.add_argument('--restore_bertembedding_only', type=bool, default=False)  # effective when restore_ckpt is True
 parser.add_argument('--embedding_file', type=str, default='../graph/bert/multi_cased_L-12_H-768_A-12/bert_model.ckpt')
-parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph')
+parser.add_argument('--ckpt_path', type=str, default='CutieMLproject/graph')
 parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80c80)_iter_40000.ckpt')
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='dict/40000')  # 40000 or 20000TC or table
+parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/40000')  # 40000 or 20000TC or table
 parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
 parser.add_argument('--text_case', type=bool, default=True)  # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
@@ -57,7 +57,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=5)
+parser.add_argument('--batch_size', type=int, default=1)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
@@ -70,12 +70,12 @@ parser.add_argument('--ghm_bins', type=int, default=30)  # to be tuned
 parser.add_argument('--ghm_momentum', type=int, default=0)  # 0 / 0.75
 
 # log
-parser.add_argument('--log_path', type=str, default='..\\CutieMLproject\\graph\\log')
+parser.add_argument('--log_path', type=str, default='CutieMLproject/graph/log')
 parser.add_argument('--log_disp_step', type=int, default=200)
 parser.add_argument('--log_save_step', type=int, default=200)
 parser.add_argument('--validation_step', type=int, default=200)
-parser.add_argument('--test_step', type=int, default=400)
-parser.add_argument('--ckpt_save_step', type=int, default=1000)
+parser.add_argument('--test_step', type=int, default=200)
+parser.add_argument('--ckpt_save_step', type=int, default=500)
 
 # model
 parser.add_argument('--embedding_size', type=int, default=256)  # not used for bert embedding which has 768 as default
@@ -188,8 +188,15 @@ if __name__ == '__main__':
     summary_path = os.path.join(params.log_path, params.save_prefix, network.name)
     summary_writer = tf.summary.FileWriter(summary_path, tf.get_default_graph(), flush_secs=10)
 
-    config = tf.ConfigProto(allow_soft_placement=True)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
+    config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=True,gpu_options=gpu_options)
     config.gpu_options.allow_growth = True
+    #config.gpu.set_per_process_memory_growth=True
+    
+    # Assume that you have 12GB of GPU memory and want to allocate ~4GB:
+    #gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
+    #sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+    
     with tf.Session(config=config) as sess:
         sess.run(tf.global_variables_initializer())
 
