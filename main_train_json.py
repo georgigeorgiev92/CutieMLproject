@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
 parser.add_argument('--doc_path', type=str, default='CutieMLproject/invoice_data')
-parser.add_argument('--save_prefix', type=str, default='TEST', help='prefix for ckpt')
+parser.add_argument('--save_prefix', type=str, default='TEST1', help='prefix for ckpt')
 parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
 
 # ckpt
@@ -45,10 +45,10 @@ parser.add_argument('--cols_segment', type=int, default=72)
 parser.add_argument('--augment_strategy', type=int,
                     default=1)  # 1 for increasing grid shape size, 2 for gaussian around target shape
 parser.add_argument('--positional_mapping_strategy', type=int, default=1)
-parser.add_argument('--rows_target', type=int, default=64)
-parser.add_argument('--cols_target', type=int, default=64)
-parser.add_argument('--rows_ulimit', type=int, default=80)  # used when data augmentation is true
-parser.add_argument('--cols_ulimit', type=int, default=80)
+parser.add_argument('--rows_target', type=int, default=100)
+parser.add_argument('--cols_target', type=int, default=100)
+parser.add_argument('--rows_ulimit', type=int, default=100)  # used when data augmentation is true
+parser.add_argument('--cols_ulimit', type=int, default=100)
 parser.add_argument('--fill_bbox', type=bool, default=False)  # fill bbox with dict_id / label_id
 
 parser.add_argument('--data_augmentation_extra', type=bool, default=True)  # randomly expand rows/cols
@@ -188,7 +188,7 @@ if __name__ == '__main__':
     summary_path = os.path.join(params.log_path, params.save_prefix, network.name)
     summary_writer = tf.summary.FileWriter(summary_path, tf.get_default_graph(), flush_secs=10)
 
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
     config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=True,gpu_options=gpu_options)
     config.gpu_options.allow_growth = True
     #config.gpu.set_per_process_memory_growth=True

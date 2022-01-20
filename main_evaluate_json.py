@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 import os, csv, timeit
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 from model_cutie_aspp import CUTIERes as CUTIEv1
 from model_cutie2_aspp import CUTIE2 as CUTIEv2
@@ -13,14 +13,14 @@ from utils import *
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
 parser.add_argument('--is_table', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='invoice_data')  # modify this
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/invoice_data')
 parser.add_argument('--save-prefix', type=str, default='TEST', help='prefix for load ckpt model')  # modify this
-parser.add_argument('--test_path', type=str, default='test')  # leave empty if no test data provided
+parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
 
 parser.add_argument('--fill_bbox', type=bool, default=False)  # augment data row/col in each batch
 
-parser.add_argument('--e_ckpt_path', type=str, default='..\\CutieMLproject\\graph')  # modify this
-parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c8(r80c80)_iter_40000.ckpt')
+parser.add_argument('--e_ckpt_path', type=str, default='CutieMLproject/graph')  # modify this
+parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c8(r80c80)_iter_13500.ckpt')
 parser.add_argument('--positional_mapping_strategy', type=int, default=1)
 parser.add_argument('--rows_target', type=int, default=80)
 parser.add_argument('--cols_target', type=int, default=80)
@@ -28,7 +28,7 @@ parser.add_argument('--rows_ulimit', type=int, default=80)
 parser.add_argument('--cols_ulimit', type=int, default=80)
 
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='dict/40000')  # 40000 or table or 20000TC
+parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/40000')  # 40000 or table or 20000TC
 parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
 parser.add_argument('--text_case', type=bool, default=False)  # case sensitive
 parser.add_argument('--dict_path', type=str, default='dict/---')  # not used if load_dict is True
@@ -62,7 +62,7 @@ if __name__ == '__main__':
         sess.run(tf.global_variables_initializer())
         try:
             # ckpt_path = os.path.join(params.e_ckpt_path, params.save_prefix, params.ckpt_file)
-            ckpt_path = '..\\CutieMLproject\\graph\\TEST\\CUTIE2_dilate_d20000c8(r80c80)_iter_40000.ckpt'
+            ckpt_path = 'CutieMLproject/graph/TEST/CUTIE2_dilate_d20000c8(r80c80)_iter_13500.ckpt'
             ckpt = tf.train.get_checkpoint_state(ckpt_path)
             print('Restoring from {}...'.format(ckpt_path))
             ckpt_saver.restore(sess, ckpt_path)
