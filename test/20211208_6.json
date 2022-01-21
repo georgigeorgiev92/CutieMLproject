@@ -1,0 +1,278 @@
+{
+    "text_boxes":[
+       {
+          "id":1,
+          "text":"England ",
+          "bbox":[
+             317,
+             55,
+             30,
+             14
+          ]
+       },
+       {
+          "id":2,
+          "text":"T-1000 ",
+          "bbox":[
+             372,
+             48,
+             30,
+             14
+          ]
+       },
+       {
+          "id":3,
+          "text":"Berlin ",
+          "bbox":[
+             420,
+             39,
+             30,
+             14
+          ]
+       },
+       {
+          "id":4,
+          "text":"The ",
+          "bbox":[
+             459,
+             27,
+             30,
+             14
+          ]
+       },
+       {
+          "id":5,
+          "text":"Street",
+          "bbox":[
+             486,
+             39,
+             30,
+             14
+          ]
+       },
+       {
+          "id":6,
+          "text":"England ",
+          "bbox":[
+             20,
+             49,
+             76,
+             13
+          ]
+       },
+       {
+          "id":7,
+          "text":"T-1000 ",
+          "bbox":[
+             69,
+             42,
+             76,
+             13
+          ]
+       },
+       {
+          "id":8,
+          "text":"Plovdiv ",
+          "bbox":[
+             111,
+             41,
+             76,
+             13
+          ]
+       },
+       {
+          "id":9,
+          "text":"Tzar ",
+          "bbox":[
+             152,
+             26,
+             76,
+             13
+          ]
+       },
+       {
+          "id":10,
+          "text":"Boris",
+          "bbox":[
+             178,
+             29,
+             76,
+             13
+          ]
+       },
+       {
+          "id":11,
+          "text":"AI ",
+          "bbox":[
+             317,
+             20,
+             51,
+             15
+          ]
+       },
+       {
+          "id":12,
+          "text":"NWO",
+          "bbox":[
+             337,
+             35,
+             51,
+             15
+          ]
+       },
+       {
+          "id":13,
+          "text":"Robotic ",
+          "bbox":[
+             20,
+             44,
+             95,
+             15
+          ]
+       },
+       {
+          "id":14,
+          "text":"Overlords ",
+          "bbox":[
+             64,
+             57,
+             95,
+             15
+          ]
+       },
+       {
+          "id":15,
+          "text":"Ltd.",
+          "bbox":[
+             121,
+             21,
+             95,
+             15
+          ]
+       },
+       {
+          "id":16,
+          "text":"Receipt:",
+          "bbox":[
+             20,
+             51,
+             130,
+             14
+          ]
+       },
+       {
+          "id":17,
+          "text":"85850980-93e6-4d26-b173-2fb9a7af3cce",
+          "bbox":[
+             81,
+             274,
+             130,
+             15
+          ]
+       },
+       {
+          "id":18,
+          "text":"01.08.2020",
+          "bbox":[
+             521,
+             54,
+             130,
+             13
+          ]
+       }
+    ],
+    "fields":[
+       {
+          "field_name":"SENDER_ADDRESS",
+          "value_id":[
+             1,
+             2,
+             3,
+             4,
+             5
+          ],
+          "value_text":"England T-1000 Berlin The Street",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       },
+       {
+          "field_name":"RECEIVER_ADDRESS",
+          "value_id":[
+             6,
+             7,
+             8,
+             9,
+             10
+          ],
+          "value_text":"England T-1000 Plovdiv Tzar Boris",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       },
+       {
+          "field_name":"SENDER_NAME",
+          "value_id":[
+             11,
+             12
+          ],
+          "value_text":"AI NWO",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       },
+       {
+          "field_name":"RECEIVER_NAME",
+          "value_id":[
+             13,
+             14,
+             15
+          ],
+          "value_text":"Robotic Overlords Ltd.",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       },
+       {
+          "field_name":"INVOICE_NUMBER",
+          "value_id":[
+             17
+          ],
+          "value_text":"85850980-93e6-4d26-b173-2fb9a7af3cce",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       },
+       {
+          "field_name":"INVOICE_DATE",
+          "value_id":[
+             18
+          ],
+          "value_text":"01.08.2020",
+          "key_id":[
+             
+          ],
+          "key_text":[
+             
+          ]
+       }
+    ],
+    "global_attributes":{
+       "file_id":"20211208_6.png"
+    }
+ }

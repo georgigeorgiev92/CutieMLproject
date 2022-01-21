@@ -53,7 +53,7 @@ class DataLoader():
         self.text_case = params.text_case
         self.tokenize = params.tokenize
         if self.tokenize:
-            self.tokenizer = tokenization.FullTokenizer('CutieMLproject/dict/vocab.txt', do_lower_case=not self.text_case)
+            self.tokenizer = tokenization.FullTokenizer('dict/vocab.txt', do_lower_case=not self.text_case)
 
         self.rows = self.encoding_factor  # to be updated
         self.cols = self.encoding_factor  # to be updated
