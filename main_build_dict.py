@@ -6,7 +6,7 @@ from data_loader_json import DataLoader
 
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 #parser.add_argument('--dict_path', type=str, default='dict/newtest')
-parser.add_argument('--dict_path', type=str, default='dict/40000')#40000
+parser.add_argument('--dict_path', type=str, default='dict/40000')
 #parser.add_argument('--doc_path', type=str, default='data/SROIE')
 #parser.add_argument('--dict_path', type=str, default='dict/TEST')
 parser.add_argument('--doc_path', type=str, default='invoice_data')
