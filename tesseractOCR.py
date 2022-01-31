@@ -15,6 +15,8 @@ import json
 
 def readTSV(data):
     rows = data.split('\n')
+    #print(data)
+    #print(rows)
     nlen = len(rows)
     if nlen == 0:
         return
@@ -27,7 +29,7 @@ def readTSV(data):
     npage = None  # page#
     nbl = None
     nline = None
-    for i in range(1, nlen):
+    for i in range(1, nlen-1):
         r = rows[i].split('\t')
         word = dict()
         word['id'] = i
