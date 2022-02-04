@@ -19,8 +19,8 @@ parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
 parser.add_argument('--doc_path', type=str, default='invoice_data')
-parser.add_argument('--save_prefix', type=str, default='TEST', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='test') # leave empty if no test data provided
+parser.add_argument('--save_prefix', type=str, default='REALINVOICES', help='prefix for ckpt')
+parser.add_argument('--test_path', type=str, default='for annotation annotated invoices') # leave empty if no test data provided
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
