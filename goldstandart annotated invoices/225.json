@@ -138,7 +138,7 @@
                 549,
                 133
             ],
-            "text": "Gt"
+            "text": "G1"
         },
         {
             "id": 40,
@@ -178,7 +178,7 @@
                 135,
                 185
             ],
-            "text": "oss"
+            "text": "0051"
         },
         {
             "id": 53,
@@ -268,7 +268,7 @@
                 162,
                 204
             ],
-            "text": "90872017"
+            "text": "06/05/2017"
         },
         {
             "id": 74,
@@ -358,7 +358,7 @@
                 526,
                 224
             ],
-            "text": "‘Unite"
+            "text": "United"
         },
         {
             "id": 92,
@@ -378,7 +378,7 @@
                 79,
                 242
             ],
-            "text": "‘Subject"
+            "text": "ï¿½Subject"
         },
         {
             "id": 100,
@@ -478,7 +478,7 @@
                 556,
                 314
             ],
-            "text": "£23000"
+            "text": "ï¿½23000"
         },
         {
             "id": 128,
@@ -518,7 +518,7 @@
                 556,
                 343
             ],
-            "text": "£330.00"
+            "text": "ï¿½330.00"
         },
         {
             "id": 144,
@@ -568,7 +568,7 @@
                 556,
                 406
             ],
-            "text": "‘subtotal"
+            "text": "ï¿½subtotal"
         },
         {
             "id": 164,
@@ -608,7 +608,7 @@
                 635,
                 424
             ],
-            "text": "£2.881.00"
+            "text": "ï¿½2.881.00"
         },
         {
             "id": 177,
@@ -628,7 +628,7 @@
                 635,
                 439
             ],
-            "text": "-£31,361.00"
+            "text": "-ï¿½31,361.00"
         },
         {
             "id": 185,
@@ -658,61 +658,61 @@
                 635,
                 466
             ],
-            "text": "£0.00"
+            "text": "0.00"
         }
     ],
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [23,24],
+            "value_text": [ "Discovery Designs" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [32,33,34,38,39,40],
+            "value_text": ["4418 Vincent Pace Gaegow G1 2ER"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [53,54],
+            "value_text": ["Barrington Publishers" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [58,59,60,61,74,75,76,91,92],
+            "value_text": ["17 Great Stok Steet London SE ONS United Kingdom"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [70],
+            "value_text": ["06/05/2017"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [49],
+            "value_text": ["0051"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [190],
+            "value_text": ["0.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/225.jpg"
+        "file_id": "225.jpg"
     }
 }

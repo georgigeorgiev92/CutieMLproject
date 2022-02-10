@@ -268,7 +268,7 @@
                 651,
                 203
             ],
-            "text": "§9280-1"
+            "text": "59280-1"
         },
         {
             "id": 74,
@@ -338,7 +338,7 @@
                 676,
                 226
             ],
-            "text": "2601"
+            "text": "2001"
         },
         {
             "id": 87,
@@ -348,7 +348,7 @@
                 59,
                 230
             ],
-            "text": "|4201"
+            "text": "4201"
         },
         {
             "id": 88,
@@ -378,7 +378,7 @@
                 554,
                 246
             ],
-            "text": "‘Amount:"
+            "text": "ï¿½Amount:"
         },
         {
             "id": 97,
@@ -428,7 +428,7 @@
                 145,
                 292
             ],
-            "text": "‘Questions"
+            "text": "ï¿½Questions"
         },
         {
             "id": 108,
@@ -678,7 +678,7 @@
                 512,
                 336
             ],
-            "text": "‘O7/0170%"
+            "text": "ï¿½O7/0170%"
         },
         {
             "id": 157,
@@ -1638,7 +1638,7 @@
                 277,
                 925
             ],
-            "text": "©"
+            "text": "ï¿½"
         },
         {
             "id": 367,
@@ -1854,8 +1854,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [5,6,7,8],
+            "value_text": ["UNIVERSITY OF CAUFORNIA, DAVIS"],
             "key_id": [],
             "key_text": []
         },
@@ -1868,29 +1868,29 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [58,59,60,61 ],
+            "value_text": ["Dr. Bruce D. Davies"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [87,88,89,97,98,99],
+            "value_text": ["4201 Commerce Road Richmond, VA 23234"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [81,82,83],
+            "value_text": ["October 22 2001"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [70],
+            "value_text": ["59280-1"],
             "key_id": [],
             "key_text": []
         },
@@ -1903,6 +1903,6 @@
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/205.jpg"
+        "file_id": "205.jpg"
     }
 }

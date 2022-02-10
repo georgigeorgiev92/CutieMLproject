@@ -168,7 +168,7 @@
                 920,
                 607
             ],
-            "text": "—"
+            "text": "ï¿½"
         },
         {
             "id": 43,
@@ -884,15 +884,15 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [7,8],
+            "value_text": ["Stripe, Inc."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [144,145,146,147,148,149,150,151,152],
+            "value_text": ["185 Berry Street, Suite 550, San Franciso CA 94107"],
             "key_id": [],
             "key_text": []
         },
@@ -912,27 +912,27 @@
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [47,48,49],
+            "value_text": ["May 10, 2018"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [13],
+            "value_text": ["#5022CBA-0314"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [37],
+            "value_text": ["$39.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/217.jpg"
+        "file_id": "217.jpg"
     }
 }

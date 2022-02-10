@@ -68,7 +68,7 @@
                 199,
                 236
             ],
-            "text": "a"
+            "text": "CA"
         },
         {
             "id": 24,
@@ -88,7 +88,7 @@
                 212,
                 261
             ],
-            "text": "aver"
+            "text": "Culver"
         },
         {
             "id": 29,
@@ -98,7 +98,7 @@
                 259,
                 261
             ],
-            "text": "iyaceess"
+            "text": "CityAaddress"
         },
         {
             "id": 33,
@@ -138,7 +138,7 @@
                 205,
                 274
             ],
-            "text": "{114"
+            "text": "114"
         },
         {
             "id": 43,
@@ -158,7 +158,7 @@
                 266,
                 264
             ],
-            "text": "Bh"
+            "text": "Blvd."
         },
         {
             "id": 48,
@@ -198,7 +198,7 @@
                 511,
                 303
             ],
-            "text": "soo"
+            "text": "5002"
         },
         {
             "id": 61,
@@ -298,7 +298,7 @@
                 146,
                 346
             ],
-            "text": "127"
+            "text": "137"
         },
         {
             "id": 92,
@@ -348,7 +348,7 @@
                 511,
                 348
             ],
-            "text": "‘28,2018"
+            "text": "ï¿½28,2018"
         },
         {
             "id": 106,
@@ -428,7 +428,7 @@
                 123,
                 480
             ],
-            "text": "“indicates"
+            "text": "ï¿½indicates"
         },
         {
             "id": 132,
@@ -588,7 +588,7 @@
                 405,
                 511
             ],
-            "text": "100.0):"
+            "text": "1,100"
         },
         {
             "id": 169,
@@ -708,7 +708,7 @@
                 144,
                 554
             ],
-            "text": "‘davoo@gmall"
+            "text": "ï¿½davoo@gmall"
         },
         {
             "id": 205,
@@ -804,55 +804,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 5,6,7],
+            "value_text": ["Vadim Carazan LTC"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [20,28,29,42,43,44],
+            "value_text": ["CA Culver CityAaddress 114 Seputveda Blvd."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [48],
+            "value_text": ["Paul"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [79,91,92,93],
+            "value_text": ["CA Glendora 137 San Bernardino"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [74,75],
+            "value_text": ["Mar 29,2018"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [57],
+            "value_text": ["5002"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [165],
+            "value_text": ["1,100"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/218.jpg"
+        "file_id": "218.jpg"
     }
 }

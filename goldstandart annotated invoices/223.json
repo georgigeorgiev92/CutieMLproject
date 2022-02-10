@@ -738,7 +738,7 @@
                 299,
                 635
             ],
-            "text": "°"
+            "text": "ï¿½"
         },
         {
             "id": 178,
@@ -1088,7 +1088,7 @@
                 648,
                 770
             ],
-            "text": "‘TOTAL"
+            "text": "ï¿½TOTAL"
         },
         {
             "id": 258,
@@ -1234,55 +1234,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [28,29],
+            "value_text": ["Company Inc."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [38,39,40,50,51,52,53,63,64,65,66],
+            "value_text": ["Apple Street 1 San Francisco,  837 28 United States of America"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [33,34],
+            "value_text": ["Startup Inc."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [44,45,46,57,58,59,70,71,72,73],
+            "value_text": ["Wall Street 4525 Brooklyn, 837 28 United States of America"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [191,192,193],
+            "value_text": ["Jul 04, 2017"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [10],
+            "value_text": ["#0009268"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [242,243],
+            "value_text": ["6.950 USD"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/223.jpg"
+        "file_id": "223.jpg"
     }
 }

@@ -604,29 +604,29 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [39,40],
+            "value_text": ["Amy Santiago"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [44,45,46,56,57],
+            "value_text": ["Brooklyn Nine Nine New York"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [28,29],
+            "value_text": ["Laura Johnsons"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [33,34,35,50,51,52],
+            "value_text": ["2330 Better Street Kansas City, KS" ],
             "key_id": [],
             "key_text": []
         },
@@ -639,20 +639,20 @@
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [12,13,14],
+            "value_text": ["0023-2020"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [155],
+            "value_text": ["850.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/226.jpg"
+        "file_id": "226.jpg"
     }
 }

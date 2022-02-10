@@ -58,7 +58,7 @@
                 439,
                 67
             ],
-            "text": "‘0000000"
+            "text": "0000000"
         },
         {
             "id": 26,
@@ -238,7 +238,7 @@
                 80,
                 183
             ],
-            "text": "‘Queens,"
+            "text": "Queens,"
         },
         {
             "id": 62,
@@ -258,7 +258,7 @@
                 309,
                 181
             ],
-            "text": "williar"
+            "text": "William"
         },
         {
             "id": 67,
@@ -268,7 +268,7 @@
                 328,
                 181
             ],
-            "text": "Hil"
+            "text": "Hill"
         },
         {
             "id": 71,
@@ -498,7 +498,7 @@
                 92,
                 392
             ],
-            "text": "‘Sauvignon"
+            "text": "ï¿½Sauvignon"
         },
         {
             "id": 136,
@@ -618,7 +618,7 @@
                 11,
                 522
             ],
-            "text": "«"
+            "text": "ï¿½"
         },
         {
             "id": 181,
@@ -668,7 +668,7 @@
                 129,
                 548
             ],
-            "text": "—_"
+            "text": "ï¿½_"
         },
         {
             "id": 201,
@@ -704,55 +704,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [17,18],
+            "value_text": ["Wine World"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [50,51,52,61,62],
+            "value_text": ["1332,Anywhere Street, Queens, New" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [66,67],
+            "value_text": ["William Hill"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [71,72,73,82,83,84],
+            "value_text": ["3215, Anywhere Street, Brooklyn, New York"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [42,46],
+            "value_text": ["10/22/28"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [22],
+            "value_text": [ "0000000"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [205],
+            "value_text": ["$95"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/208.jpg"
+        "file_id": "208.jpg"
     }
 }

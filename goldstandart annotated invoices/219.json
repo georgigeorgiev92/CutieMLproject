@@ -58,7 +58,7 @@
                 132,
                 139
             ],
-            "text": "©"
+            "text": "ï¿½"
         },
         {
             "id": 17,
@@ -1054,55 +1054,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [5],
+            "value_text": ["ForceStore"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 9,10,11,12,21,22,23,24,25],
+            "value_text": [ "6146 Honey Bluff Parkway Calder, Michigan, 49628-7978 United States"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 64,65],
+            "value_text": ["Veronica Costello"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [74,75,76,77,88,89,90,94,95],
+            "value_text": ["6146 Honey Bluff Parkway Calder, Michigan, 49628-7978 United States"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [49,50,51],
+            "value_text": ["Jun 10, 2019"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [45],
+            "value_text": ["#000000005"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [229],
+            "value_text": ["$243.45"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/219.jpg"
+        "file_id": "219.jpg"
     }
 }

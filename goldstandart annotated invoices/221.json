@@ -68,7 +68,7 @@
                 113,
                 91
             ],
-            "text": "\\StenoMed,"
+            "text": "StenoMed,"
         },
         {
             "id": 24,
@@ -148,7 +148,7 @@
                 54,
                 133
             ],
-            "text": "18504"
+            "text": "8504"
         },
         {
             "id": 50,
@@ -198,7 +198,7 @@
                 416,
                 121
             ],
-            "text": "Prazore"
+            "text": "3/3/2016"
         },
         {
             "id": 61,
@@ -208,7 +208,7 @@
                 476,
                 120
             ],
-            "text": "oar"
+            "text": "19427"
         },
         {
             "id": 65,
@@ -218,7 +218,7 @@
                 109,
                 138
             ],
-            "text": "Jowasso,"
+            "text": "Owasso,"
         },
         {
             "id": 66,
@@ -228,7 +228,7 @@
                 79,
                 147
             ],
-            "text": "ox"
+            "text": "OK"
         },
         {
             "id": 67,
@@ -238,7 +238,7 @@
                 109,
                 138
             ],
-            "text": "74055,"
+            "text": "74055"
         },
         {
             "id": 71,
@@ -248,7 +248,7 @@
                 74,
                 189
             ],
-            "text": "|OUHSC"
+            "text": "OUHSC"
         },
         {
             "id": 72,
@@ -288,7 +288,7 @@
                 62,
                 204
             ],
-            "text": "(920."
+            "text": "920 S."
         },
         {
             "id": 79,
@@ -338,7 +338,7 @@
                 85,
                 219
             ],
-            "text": "[Oklahoma"
+            "text": "Oklahoma"
         },
         {
             "id": 87,
@@ -378,7 +378,7 @@
                 443,
                 218
             ],
-            "text": "‘StenoMed,"
+            "text": "ï¿½StenoMed,"
         },
         {
             "id": 97,
@@ -488,7 +488,7 @@
                 522,
                 262
             ],
-            "text": "‘mayan"
+            "text": "ï¿½mayan"
         },
         {
             "id": 117,
@@ -568,7 +568,7 @@
                 520,
                 289
             ],
-            "text": "‘rindteno"
+            "text": "ï¿½rindteno"
         },
         {
             "id": 131,
@@ -938,7 +938,7 @@
                 162,
                 422
             ],
-            "text": "‘z21Sue"
+            "text": "ï¿½z21Sue"
         },
         {
             "id": 231,
@@ -988,7 +988,7 @@
                 164,
                 437
             ],
-            "text": "£697"
+            "text": "ï¿½697"
         },
         {
             "id": 245,
@@ -1174,55 +1174,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [23,24],
+            "value_text": ["StenoMed, Inc."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [49,50,51,52,53,65,66,67],
+            "value_text": ["18504 N. 128th E. Ave. Owasso, OK 74055"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [71,72,73,74],
+            "value_text": ["OUHSC Department of Urology"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [78,79,80,81,82,86,87,88,89],
+            "value_text": ["920 S. L. Young Blvd, WP31S0 Oklahoma City, OK 73104"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [57],
+            "value_text": ["3/3/2016"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [61],
+            "value_text": ["19427"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [283],
+            "value_text": ["$601.04"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/221.jpg"
+        "file_id": "221.jpg"
     }
 }

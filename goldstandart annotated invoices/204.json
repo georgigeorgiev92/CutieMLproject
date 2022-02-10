@@ -8,7 +8,7 @@
                 292,
                 111
             ],
-            "text": "‘Madison"
+            "text": "ï¿½Madison"
         },
         {
             "id": 6,
@@ -38,7 +38,7 @@
                 268,
                 129
             ],
-            "text": "‘Two"
+            "text": "Two"
         },
         {
             "id": 12,
@@ -348,7 +348,7 @@
                 645,
                 423
             ],
-            "text": "‘AMOUNT"
+            "text": "ï¿½AMOUNT"
         },
         {
             "id": 79,
@@ -418,7 +418,7 @@
                 387,
                 441
             ],
-            "text": "1995°96"
+            "text": "1995ï¿½96"
         },
         {
             "id": 86,
@@ -952,7 +952,7 @@
         }
     ],
     "fields": [
-        {
+          {
             "field_name": "SENDER_NAME",
             "value_id": [],
             "value_text": [],
@@ -961,48 +961,48 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [5,6,7,11,12,13,17,18,19,20],
+            "value_text": ["Madison Square Garden Two Pennsylvania Plaza New York, N.Y. 10121"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [26,27],
+            "value_text": ["Philip Morris"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [31,32,33,46,47,48,49,50],
+            "value_text": ["120 Park Avenue New York, New York 10010"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [54],
+            "value_text": ["03/12/96"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 42 ],
+            "value_text": ["17049"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [219],
+            "value_text": ["$272,014.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/204.jpg"
+        "file_id": "204.jpg"
     }
 }

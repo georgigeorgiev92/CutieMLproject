@@ -118,7 +118,7 @@
                 464,
                 359
             ],
-            "text": "gregoryégmail.com"
+            "text": "gregoryï¿½gmail.com"
         },
         {
             "id": 41,
@@ -208,7 +208,7 @@
                 135,
                 404
             ],
-            "text": "mm"
+            "text": "IN"
         },
         {
             "id": 59,
@@ -535,7 +535,7 @@
         {
             "field_name": "SENDER_NAME",
             "value_id": [],
-            "value_text": [],
+            "value_text": ["Green Catering"],
             "key_id": [],
             "key_text": []
         },
@@ -548,41 +548,41 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [32,33],
+            "value_text": ["Hilda Haynes"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [41,42,43,57,58,59],
+            "value_text": ["83 Suspendisse av. Weirton IN 93479" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [28 ],
+            "value_text": ["22/07/2020"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [9],
+            "value_text": ["#0048"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [162],
+            "value_text": ["$198.45"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/216.jpg"
+        "file_id": "216.jpg"
     }
 }

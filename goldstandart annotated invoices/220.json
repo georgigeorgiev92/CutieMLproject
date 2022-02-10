@@ -78,7 +78,7 @@
                 1236,
                 137
             ],
-            "text": "»"
+            "text": "ï¿½"
         },
         {
             "id": 25,
@@ -188,7 +188,7 @@
                 1358,
                 399
             ],
-            "text": "in)"
+            "text": "11"
         },
         {
             "id": 57,
@@ -404,55 +404,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [5],
+            "value_text": ["Topnotepad"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [9,10,11,12],
+            "value_text": [ "James street, New York"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [42,43,44],
+            "value_text": ["Mr. Alec Brown"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [57,58],
+            "value_text": ["New York"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [67],
+            "value_text": ["01-Aug-2021"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [53],
+            "value_text": ["11"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [116],
+            "value_text": ["110.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/220.jpg"
+        "file_id": "220.jpg"
     }
 }

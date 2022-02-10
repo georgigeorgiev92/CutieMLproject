@@ -794,8 +794,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [34,35],
+            "value_text": ["Ethan Meyer"],
             "key_id": [],
             "key_text": []
         },
@@ -808,41 +808,41 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [43,44,45],
+            "value_text": ["Maggie's Clothing Co."],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [88,89,90,94,95,96 ],
+            "value_text": [ "2211 Kovar Road, Burlington, MA 01803"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [10,11,12],
+            "value_text": ["February 12, 2020"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [18],
+            "value_text": ["003"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [199],
+            "value_text": ["$2,874.38"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/213.jpg"
+        "file_id": "213.jpg"
     }
 }

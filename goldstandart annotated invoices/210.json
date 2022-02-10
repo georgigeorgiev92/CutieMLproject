@@ -48,7 +48,7 @@
                 345,
                 123
             ],
-            "text": "‘Glent"
+            "text": "ï¿½Glent"
         },
         {
             "id": 19,
@@ -68,7 +68,7 @@
                 390,
                 123
             ],
-            "text": "Va"
+            "text": "Via"
         },
         {
             "id": 21,
@@ -88,7 +88,7 @@
                 428,
                 140
             ],
-            "text": "‘Address:"
+            "text": "ï¿½Address:"
         },
         {
             "id": 26,
@@ -108,7 +108,7 @@
                 413,
                 148
             ],
-            "text": "Seney"
+            "text": "Sidney"
         },
         {
             "id": 28,
@@ -278,7 +278,7 @@
                 276,
                 282
             ],
-            "text": "‘Sages"
+            "text": "ï¿½Sages"
         },
         {
             "id": 72,
@@ -308,7 +308,7 @@
                 58,
                 307
             ],
-            "text": "‘Web"
+            "text": "ï¿½Web"
         },
         {
             "id": 81,
@@ -468,7 +468,7 @@
                 203,
                 575
             ],
-            "text": "‘penn"
+            "text": "ï¿½penn"
         },
         {
             "id": 127,
@@ -538,22 +538,22 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [20,21 ],
+            "value_text": ["Via Boutique"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [26,27,28],
+            "value_text": ["2720 Sidney St. "],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [10],
+            "value_text": ["09.15.09"],
             "key_id": [],
             "key_text": []
         },
@@ -566,13 +566,13 @@
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [105],
+            "value_text": ["4,000"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/210.jpg"
+        "file_id": "210.jpg"
     }
 }

@@ -128,7 +128,7 @@
                 193,
                 151
             ],
-            "text": "\\NTIC_STREET"
+            "text": "ATLANTIC_STREET"
         },
         {
             "id": 33,
@@ -198,7 +198,7 @@
                 156,
                 186
             ],
-            "text": "'969/2920"
+            "text": "969/2920"
         },
         {
             "id": 49,
@@ -468,7 +468,7 @@
                 113,
                 315
             ],
-            "text": "‘Tarrytown,"
+            "text": "Tarrytown,"
         },
         {
             "id": 109,
@@ -508,7 +508,7 @@
                 450,
                 307
             ],
-            "text": "‘Tarrytown,"
+            "text": "ï¿½Tarrytown,"
         },
         {
             "id": 116,
@@ -988,7 +988,7 @@
                 102,
                 731
             ],
-            "text": "‘Allnwoics"
+            "text": "ï¿½Allnwoics"
         },
         {
             "id": 245,
@@ -1388,7 +1388,7 @@
                 72,
                 767
             ],
-            "text": "‘The"
+            "text": "ï¿½The"
         },
         {
             "id": 294,
@@ -1478,7 +1478,7 @@
                 349,
                 757
             ],
-            "text": "atone’"
+            "text": "atoneï¿½"
         },
         {
             "id": 303,
@@ -1558,7 +1558,7 @@
                 76,
                 777
             ],
-            "text": "‘Any"
+            "text": "ï¿½Any"
         },
         {
             "id": 326,
@@ -1998,7 +1998,7 @@
                 142,
                 819
             ],
-            "text": "atlrny’"
+            "text": "atlrnyï¿½"
         },
         {
             "id": 385,
@@ -2508,7 +2508,7 @@
                 103,
                 869
             ],
-            "text": "‘Acceplance"
+            "text": "ï¿½Acceplance"
         },
         {
             "id": 457,
@@ -2754,55 +2754,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [10,11],
+            "value_text": ["COOKE ASSOCIATES"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [29,39,40,45],
+            "value_text": ["ATLANTIC_STREET ORD, CT 969/2920"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [65],
+            "value_text": ["Beverly"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [84,85,86,87,98,99,108,109,110,111],
+            "value_text": ["660 White Plains Road Suite 400 Tarrytown, New York 10591"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [489],
+            "value_text": ["Date"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [35],
+            "value_text": ["232"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [406],
+            "value_text": [ "$792.00"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/203.jpg"
+        "file_id": "203.jpg"
     }
 }

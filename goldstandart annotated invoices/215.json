@@ -8,7 +8,7 @@
                 219,
                 34
             ],
-            "text": "—"
+            "text": "ï¿½"
         },
         {
             "id": 9,
@@ -368,7 +368,7 @@
                 623,
                 746
             ],
-            "text": "‘SUBTOTAL"
+            "text": "ï¿½SUBTOTAL"
         },
         {
             "id": 105,
@@ -508,7 +508,7 @@
                 731,
                 844
             ],
-            "text": "$9910"
+            "text": "$99.10"
         },
         {
             "id": 143,
@@ -554,8 +554,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [9,10],
+            "value_text": ["Lilly's Closet"],
             "key_id": [],
             "key_text": []
         },
@@ -568,41 +568,41 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 32,33],
+            "value_text": [ "Lilly Adams"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [46,47,48,61,62,63,67,68],
+            "value_text": ["6351 Fringilla Avenue Gardena Colorado 37 United States"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [42],
+            "value_text": ["07/22/2020"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [28],
+            "value_text": ["0002"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [139],
+            "value_text": ["$99.10"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/215.jpg"
+        "file_id": "215.jpg"
     }
 }

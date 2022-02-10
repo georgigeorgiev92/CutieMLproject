@@ -924,29 +924,29 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 32,33],
+            "value_text": [ "Martin Harling"  ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [193,194,195,196,197,198],
+            "value_text": ["123 Main Street NY, NY 10003"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [27,32],
+            "value_text": ["Jasper Carney"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [37,38,39,48,49,50],
+            "value_text": ["1195 Lobortis Rd. New Orleans 7198"],
             "key_id": [],
             "key_text": []
         },
@@ -959,20 +959,20 @@
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [13],
+            "value_text": ["#0001"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [164],
+            "value_text": ["$155"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/214.jpg"
+        "file_id": "214.jpg"
     }
 }

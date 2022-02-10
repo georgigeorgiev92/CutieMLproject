@@ -18,7 +18,7 @@
                 141,
                 164
             ],
-            "text": "WlayéSpeh"
+            "text": "Wlay&Speh"
         },
         {
             "id": 13,
@@ -58,7 +58,7 @@
                 234,
                 174
             ],
-            "text": "«"
+            "text": "ï¿½"
         },
         {
             "id": 17,
@@ -88,7 +88,7 @@
                 321,
                 177
             ],
-            "text": "I"
+            "text": "IL"
         },
         {
             "id": 20,
@@ -108,7 +108,7 @@
                 476,
                 178
             ],
-            "text": "“Telephone"
+            "text": "ï¿½Telephone"
         },
         {
             "id": 22,
@@ -138,7 +138,7 @@
                 61,
                 225
             ],
-            "text": "$6195"
+            "text": "66195"
         },
         {
             "id": 31,
@@ -188,7 +188,7 @@
                 144,
                 276
             ],
-            "text": "Tparuie"
+            "text": "PHILIP"
         },
         {
             "id": 48,
@@ -528,7 +528,7 @@
                 634,
                 423
             ],
-            "text": "11497."
+            "text": "11457."
         },
         {
             "id": 118,
@@ -548,7 +548,7 @@
                 613,
                 433
             ],
-            "text": "——"
+            "text": "ï¿½ï¿½"
         },
         {
             "id": 126,
@@ -584,55 +584,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [9],
+            "value_text": ["Wlay&Speh"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [  13,14,15,16,17,18,19,20 ],
+            "value_text": ["1801 Opus Pace Downers Grove IL 60516-5713" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [47,48],
+            "value_text": [ "PHILIP MORRIS" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [67,68,69,73,74,78,8],
+            "value_text": ["120 PARK AVE. NEW YORK Ny 10017"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [31],
+            "value_text": ["6/19/1994"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 27 ],
+            "value_text": ["66195"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [117,118],
+            "value_text": ["11457.33"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/201.jpg"
+        "file_id": "201.jpg"
     }
 }

@@ -158,7 +158,7 @@
                 166,
                 207
             ],
-            "text": "Minety"
+            "text": "Ninety"
         },
         {
             "id": 45,
@@ -208,7 +208,7 @@
                 157,
                 217
             ],
-            "text": "Aaywhere,"
+            "text": "Anywhere,"
         },
         {
             "id": 56,
@@ -228,7 +228,7 @@
                 230,
                 216
             ],
-            "text": "99999,"
+            "text": "99999999"
         },
         {
             "id": 64,
@@ -1298,7 +1298,7 @@
                 505,
                 641
             ],
-            "text": "coungcroR’s"
+            "text": "coungcroRï¿½s"
         },
         {
             "id": 348,
@@ -1884,8 +1884,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [22,23,24],
+            "value_text": ["BENSON&HEDGES"],
             "key_id": [],
             "key_text": []
         },
@@ -1898,41 +1898,41 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [  32,33 ],
+            "value_text": ["Philip Morris"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [43,44,45,46,55,56],
+            "value_text": ["999 Ninety Ninth Street Anywhere, USA 99999"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [447],
+            "value_text": ["6/25/01" ],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [60],
+            "value_text": ["99999999"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [455],
+            "value_text": ["6,663.57"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/202.jpg"
+        "file_id": "202.jpg"
     }
 }
