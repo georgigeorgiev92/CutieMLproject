@@ -1,0 +1,228 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                27,
+                20,
+                75,
+                76
+            ],
+            "text": "G"
+        },
+        {
+            "id": 9,
+            "bbox": [
+                27,
+                119,
+                124,
+                157
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                132,
+                120,
+                197,
+                141
+            ],
+            "text": "#123"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                29,
+                232,
+                63,
+                238
+            ],
+            "text": "oxen"
+        },
+        {
+            "id": 18,
+            "bbox": [
+                111,
+                236,
+                123,
+                242
+            ],
+            "text": "we"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                203,
+                236,
+                209,
+                244
+            ],
+            "text": "oP"
+        },
+        {
+            "id": 26,
+            "bbox": [
+                310,
+                236,
+                321,
+                242
+            ],
+            "text": "oe"
+        },
+        {
+            "id": 30,
+            "bbox": [
+                354,
+                236,
+                399,
+                243
+            ],
+            "text": "sso0)week"
+        },
+        {
+            "id": 34,
+            "bbox": [
+                425,
+                236,
+                450,
+                243
+            ],
+            "text": "$1000"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                310,
+                267,
+                318,
+                273
+            ],
+            "text": "o"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                354,
+                267,
+                399,
+                274
+            ],
+            "text": "ss00)week"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                425,
+                267,
+                446,
+                274
+            ],
+            "text": "$500"
+        },
+        {
+            "id": 50,
+            "bbox": [
+                425,
+                293,
+                451,
+                301
+            ],
+            "text": "$1500"
+        },
+        {
+            "id": 54,
+            "bbox": [
+                425,
+                399,
+                449,
+                407
+            ],
+            "text": "$025"
+        },
+        {
+            "id": 58,
+            "bbox": [
+                242,
+                469,
+                252,
+                476
+            ],
+            "text": "si"
+        },
+        {
+            "id": 62,
+            "bbox": [
+                308,
+                469,
+                330,
+                476
+            ],
+            "text": "3027"
+        },
+        {
+            "id": 66,
+            "bbox": [
+                355,
+                472,
+                424,
+                485
+            ],
+            "text": "1500.00;"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "for_annotation/231.jpg"
+    }
+}

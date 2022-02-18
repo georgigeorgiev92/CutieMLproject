@@ -1,0 +1,438 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                279,
+                91,
+                326,
+                124
+            ],
+            "text": "low"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                331,
+                80,
+                378,
+                124
+            ],
+            "text": "Rose"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                263,
+                121,
+                378,
+                133
+            ],
+            "text": "CHOREOGRAPHY"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                83,
+                192,
+                114,
+                204
+            ],
+            "text": "First"
+        },
+        {
+            "id": 15,
+            "bbox": [
+                121,
+                192,
+                146,
+                204
+            ],
+            "text": "and"
+        },
+        {
+            "id": 16,
+            "bbox": [
+                153,
+                192,
+                182,
+                204
+            ],
+            "text": "Last"
+        },
+        {
+            "id": 17,
+            "bbox": [
+                188,
+                192,
+                229,
+                204
+            ],
+            "text": "Name"
+        },
+        {
+            "id": 21,
+            "bbox": [
+                83,
+                214,
+                125,
+                226
+            ],
+            "text": "12345"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                131,
+                214,
+                175,
+                226
+            ],
+            "text": "Street"
+        },
+        {
+            "id": 23,
+            "bbox": [
+                182,
+                214,
+                198,
+                226
+            ],
+            "text": "Dr"
+        },
+        {
+            "id": 27,
+            "bbox": [
+                421,
+                194,
+                549,
+                229
+            ],
+            "text": "$500.00"
+        },
+        {
+            "id": 31,
+            "bbox": [
+                83,
+                234,
+                135,
+                249
+            ],
+            "text": "Olathe,"
+        },
+        {
+            "id": 32,
+            "bbox": [
+                143,
+                235,
+                160,
+                247
+            ],
+            "text": "KS"
+        },
+        {
+            "id": 33,
+            "bbox": [
+                166,
+                235,
+                207,
+                247
+            ],
+            "text": "66062"
+        },
+        {
+            "id": 37,
+            "bbox": [
+                406,
+                233,
+                418,
+                278
+            ],
+            "text": "|"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                432,
+                233,
+                485,
+                278
+            ],
+            "text": "GRAND"
+        },
+        {
+            "id": 39,
+            "bbox": [
+                492,
+                233,
+                538,
+                278
+            ],
+            "text": "TOTAL"
+        },
+        {
+            "id": 43,
+            "bbox": [
+                455,
+                311,
+                508,
+                322
+            ],
+            "text": "September"
+        },
+        {
+            "id": 44,
+            "bbox": [
+                512,
+                311,
+                528,
+                321
+            ],
+            "text": "7%,"
+        },
+        {
+            "id": 45,
+            "bbox": [
+                533,
+                311,
+                557,
+                320
+            ],
+            "text": "2018"
+        },
+        {
+            "id": 49,
+            "bbox": [
+                80,
+                308,
+                167,
+                328
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 53,
+            "bbox": [
+                84,
+                385,
+                159,
+                399
+            ],
+            "text": "Description"
+        },
+        {
+            "id": 57,
+            "bbox": [
+                503,
+                385,
+                556,
+                396
+            ],
+            "text": "Amount"
+        },
+        {
+            "id": 61,
+            "bbox": [
+                83,
+                411,
+                122,
+                425
+            ],
+            "text": "Group"
+        },
+        {
+            "id": 62,
+            "bbox": [
+                126,
+                411,
+                215,
+                425
+            ],
+            "text": "Choreography"
+        },
+        {
+            "id": 66,
+            "bbox": [
+                506,
+                410,
+                555,
+                424
+            ],
+            "text": "$450.00"
+        },
+        {
+            "id": 70,
+            "bbox": [
+                83,
+                437,
+                118,
+                448
+            ],
+            "text": "Music"
+        },
+        {
+            "id": 71,
+            "bbox": [
+                124,
+                437,
+                154,
+                448
+            ],
+            "text": "Edits"
+        },
+        {
+            "id": 75,
+            "bbox": [
+                514,
+                436,
+                555,
+                450
+            ],
+            "text": "$25.00"
+        },
+        {
+            "id": 79,
+            "bbox": [
+                84,
+                463,
+                123,
+                474
+            ],
+            "text": "2CD's"
+        },
+        {
+            "id": 83,
+            "bbox": [
+                514,
+                462,
+                555,
+                476
+            ],
+            "text": "$25.00"
+        },
+        {
+            "id": 87,
+            "bbox": [
+                421,
+                491,
+                454,
+                502
+            ],
+            "text": "Total"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                506,
+                490,
+                555,
+                504
+            ],
+            "text": "$500.00"
+        },
+        {
+            "id": 95,
+            "bbox": [
+                210,
+                769,
+                256,
+                780
+            ],
+            "text": "THANK"
+        },
+        {
+            "id": 96,
+            "bbox": [
+                260,
+                769,
+                289,
+                780
+            ],
+            "text": "YOU"
+        },
+        {
+            "id": 97,
+            "bbox": [
+                295,
+                769,
+                321,
+                780
+            ],
+            "text": "FOR"
+        },
+        {
+            "id": 98,
+            "bbox": [
+                325,
+                769,
+                363,
+                780
+            ],
+            "text": "YOUR"
+        },
+        {
+            "id": 99,
+            "bbox": [
+                368,
+                769,
+                429,
+                780
+            ],
+            "text": "BUSINESS"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "for_annotation/240.jpg"
+    }
+}
