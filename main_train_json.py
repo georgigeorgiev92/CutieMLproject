@@ -18,8 +18,8 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='CutieMLproject/invoice_data')
-parser.add_argument('--save_prefix', type=str, default='TEST1', help='prefix for ckpt')
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/generated_invoices')
+parser.add_argument('--save_prefix', type=str, default='GeneratedInvoices', help='prefix for ckpt')
 parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
 
 # ckpt
@@ -57,7 +57,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=1)
+parser.add_argument('--batch_size', type=int, default=16)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)

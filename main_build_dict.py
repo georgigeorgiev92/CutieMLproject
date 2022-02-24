@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description='CUTIE parameters')
 parser.add_argument('--dict_path', type=str, default='CutieMLproject/dict/40000')#40000
 #parser.add_argument('--doc_path', type=str, default='data/SROIE')
 #parser.add_argument('--dict_path', type=str, default='dict/TEST')
-parser.add_argument('--doc_path', type=str, default='CutieMLproject/invoice_data')
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/generated_invoices')
 parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
 parser.add_argument('--text_case', type=bool, default=True) # case sensitive
 parser.add_argument('--tokenize', type=bool, default=True) # tokenize input text
