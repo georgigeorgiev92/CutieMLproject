@@ -718,7 +718,7 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [ 38,39,40 ],
+            "value_id": [38,39,40],
             "value_text": ["Charles M Bisson"],
             "key_id": [],
             "key_text": []

@@ -770,8 +770,8 @@
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [16 ],
-            "value_text": ["0001" ],
+            "value_id": [16],
+            "value_text": ["0001"],
             "key_id": [],
             "key_text": []
         },

@@ -248,7 +248,7 @@
                 81,
                 320
             ],
-            "text": "5"
+            "text": "04"
         },
         {
             "id": 78,
@@ -523,7 +523,7 @@
         {
             "field_name": "INVOICE_DATE",
             "value_id": [77,78,79],
-            "value_text": ["5 may 2018"],
+            "value_text": ["04 may 2018"],
             "key_id": [],
             "key_text": []
         },

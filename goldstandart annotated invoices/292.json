@@ -1686,7 +1686,7 @@
         {
             "field_name": "RECEIVER_ADDRESS",
             "value_id": [38,39,40,55,56,57,58],
-            "value_text": ["32 Cheditto road,San Fransisco, CA 1001"],
+            "value_text": ["32 Chedittor road,San Fransisco, CA 1001"],
             "key_id": [],
             "key_text": []
         },

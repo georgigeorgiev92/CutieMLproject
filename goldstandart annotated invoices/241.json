@@ -815,7 +815,7 @@
         {
             "field_name": "SENDER_NAME",
             "value_id": [16,17],
-            "value_text": [ "POWER UP" ],
+            "value_text": ["POWER UP"],
             "key_id": [],
             "key_text": []
         },

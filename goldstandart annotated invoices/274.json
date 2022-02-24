@@ -925,7 +925,7 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [60,61,,62,66,67],
+            "value_id": [60,61,62,66,67],
             "value_text": ["Brooklyn Nine Nine MA 01803"],
             "key_id": [],
             "key_text": []

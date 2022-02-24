@@ -108,7 +108,7 @@
                 254,
                 246
             ],
-            "text": "Senezset"
+            "text": "Somerset"
         },
         {
             "id": 37,
@@ -559,7 +559,7 @@
         {
             "field_name": "RECEIVER_NAME",
             "value_id": [32,33],
-            "value_text": ["John Senezset"],
+            "value_text": ["John Somerset"],
             "key_id": [],
             "key_text": []
         },

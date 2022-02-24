@@ -149,7 +149,7 @@
                 220,
                 193
             ],
-            "text": "27268"
+            "text": "87268"
         },
         {
             "id": 44,
@@ -1029,15 +1029,15 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [20,21],
+            "value_text": ["Chara Kroger"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [20,21],
-            "value_text": ["Chara Kroger"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
@@ -1050,8 +1050,8 @@
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [40],
+            "value_text": ["87268"],
             "key_id": [],
             "key_text": []
         },
