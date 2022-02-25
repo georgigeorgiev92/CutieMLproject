@@ -1,0 +1,578 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                120,
+                37,
+                168,
+                50
+            ],
+            "text": "Cheney"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                173,
+                37,
+                227,
+                47
+            ],
+            "text": "Brothers"
+        },
+        {
+            "id": 7,
+            "bbox": [
+                232,
+                37,
+                250,
+                47
+            ],
+            "text": "Inc"
+        },
+        {
+            "id": 11,
+            "bbox": [
+                491,
+                37,
+                556,
+                49
+            ],
+            "text": "INVOICE"
+        },
+        {
+            "id": 15,
+            "bbox": [
+                121,
+                53,
+                125,
+                63
+            ],
+            "text": "1"
+        },
+        {
+            "id": 16,
+            "bbox": [
+                132,
+                53,
+                166,
+                63
+            ],
+            "text": "South"
+        },
+        {
+            "id": 17,
+            "bbox": [
+                170,
+                53,
+                215,
+                63
+            ],
+            "text": "Wacker"
+        },
+        {
+            "id": 18,
+            "bbox": [
+                219,
+                53,
+                249,
+                63
+            ],
+            "text": "Drive"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                120,
+                69,
+                146,
+                79
+            ],
+            "text": "29th"
+        },
+        {
+            "id": 23,
+            "bbox": [
+                151,
+                69,
+                180,
+                79
+            ],
+            "text": "Floor"
+        },
+        {
+            "id": 27,
+            "bbox": [
+                406,
+                66,
+                447,
+                76
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 28,
+            "bbox": [
+                452,
+                66,
+                479,
+                76
+            ],
+            "text": "Date:"
+        },
+        {
+            "id": 32,
+            "bbox": [
+                505,
+                66,
+                556,
+                76
+            ],
+            "text": "09/20/16"
+        },
+        {
+            "id": 36,
+            "bbox": [
+                120,
+                85,
+                172,
+                98
+            ],
+            "text": "Chicago,"
+        },
+        {
+            "id": 37,
+            "bbox": [
+                177,
+                85,
+                187,
+                95
+            ],
+            "text": "IL"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                191,
+                85,
+                228,
+                95
+            ],
+            "text": "60606"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                433,
+                89,
+                479,
+                99
+            ],
+            "text": "Number:"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                433,
+                111,
+                479,
+                121
+            ],
+            "text": "Amount:"
+        },
+        {
+            "id": 50,
+            "bbox": [
+                498,
+                111,
+                556,
+                123
+            ],
+            "text": "$1,100.00"
+        },
+        {
+            "id": 54,
+            "bbox": [
+                442,
+                134,
+                479,
+                144
+            ],
+            "text": "Terms:"
+        },
+        {
+            "id": 58,
+            "bbox": [
+                33,
+                157,
+                72,
+                167
+            ],
+            "text": "Cintas"
+        },
+        {
+            "id": 59,
+            "bbox": [
+                77,
+                157,
+                152,
+                170
+            ],
+            "text": "Corporation"
+        },
+        {
+            "id": 63,
+            "bbox": [
+                443,
+                157,
+                464,
+                167
+            ],
+            "text": "Job"
+        },
+        {
+            "id": 64,
+            "bbox": [
+                469,
+                157,
+                478,
+                167
+            ],
+            "text": "Id:"
+        },
+        {
+            "id": 68,
+            "bbox": [
+                520,
+                157,
+                556,
+                167
+            ],
+            "text": "10708"
+        },
+        {
+            "id": 72,
+            "bbox": [
+                33,
+                173,
+                61,
+                183
+            ],
+            "text": "9696"
+        },
+        {
+            "id": 73,
+            "bbox": [
+                66,
+                173,
+                104,
+                186
+            ],
+            "text": "Coney"
+        },
+        {
+            "id": 74,
+            "bbox": [
+                109,
+                173,
+                142,
+                183
+            ],
+            "text": "Island"
+        },
+        {
+            "id": 75,
+            "bbox": [
+                148,
+                173,
+                178,
+                183
+            ],
+            "text": "Drive"
+        },
+        {
+            "id": 79,
+            "bbox": [
+                33,
+                189,
+                55,
+                199
+            ],
+            "text": "San"
+        },
+        {
+            "id": 80,
+            "bbox": [
+                61,
+                189,
+                117,
+                199
+            ],
+            "text": "Francisco,"
+        },
+        {
+            "id": 81,
+            "bbox": [
+                125,
+                189,
+                143,
+                199
+            ],
+            "text": "CA"
+        },
+        {
+            "id": 82,
+            "bbox": [
+                147,
+                189,
+                183,
+                199
+            ],
+            "text": "61584"
+        },
+        {
+            "id": 86,
+            "bbox": [
+                265,
+                237,
+                311,
+                247
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 87,
+            "bbox": [
+                315,
+                237,
+                375,
+                250
+            ],
+            "text": "Summary"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                40,
+                279,
+                112,
+                292
+            ],
+            "text": "Description"
+        },
+        {
+            "id": 95,
+            "bbox": [
+                501,
+                279,
+                551,
+                289
+            ],
+            "text": "Amount"
+        },
+        {
+            "id": 99,
+            "bbox": [
+                511,
+                306,
+                550,
+                317
+            ],
+            "text": "$50.00"
+        },
+        {
+            "id": 103,
+            "bbox": [
+                39,
+                306,
+                131,
+                319
+            ],
+            "text": "Copy:Revisions"
+        },
+        {
+            "id": 107,
+            "bbox": [
+                503,
+                332,
+                550,
+                343
+            ],
+            "text": "$225.00"
+        },
+        {
+            "id": 111,
+            "bbox": [
+                39,
+                332,
+                159,
+                345
+            ],
+            "text": "Creative:Concepting"
+        },
+        {
+            "id": 115,
+            "bbox": [
+                40,
+                359,
+                129,
+                369
+            ],
+            "text": "Photo:Direction"
+        },
+        {
+            "id": 119,
+            "bbox": [
+                503,
+                359,
+                550,
+                371
+            ],
+            "text": "$525.00"
+        },
+        {
+            "id": 123,
+            "bbox": [
+                40,
+                386,
+                102,
+                396
+            ],
+            "text": "Production:"
+        },
+        {
+            "id": 124,
+            "bbox": [
+                107,
+                386,
+                139,
+                399
+            ],
+            "text": "Mgmt."
+        },
+        {
+            "id": 128,
+            "bbox": [
+                511,
+                386,
+                550,
+                397
+            ],
+            "text": "$37.50"
+        },
+        {
+            "id": 132,
+            "bbox": [
+                40,
+                412,
+                95,
+                422
+            ],
+            "text": "Research"
+        },
+        {
+            "id": 136,
+            "bbox": [
+                503,
+                412,
+                550,
+                423
+            ],
+            "text": "$262.50"
+        },
+        {
+            "id": 140,
+            "bbox": [
+                32,
+                440,
+                76,
+                450
+            ],
+            "text": "TOTAL"
+        },
+        {
+            "id": 141,
+            "bbox": [
+                80,
+                440,
+                139,
+                450
+            ],
+            "text": "AMOUNT"
+        },
+        {
+            "id": 142,
+            "bbox": [
+                143,
+                440,
+                170,
+                450
+            ],
+            "text": "DUE"
+        },
+        {
+            "id": 146,
+            "bbox": [
+                492,
+                440,
+                550,
+                452
+            ],
+            "text": "$1,100.00"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [5,6,7],
+            "value_text": ["Cheney Brothers Inc"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [15,16,17,18,22,23,36,37,38 ],
+            "value_text": ["1 South Wacker Drive 29th Floor Chicago, IL 60606"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [58,59],
+            "value_text": ["Cintas Corporation"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [72,73,7475,79,80,81,82 ],
+           "value_text": ["9696 Coney Island Drive San Francisco, CA 61584"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [32],
+            "value_text": ["09/20/16"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [42],
+            "value_text": ["Number:"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [50],
+            "value_text": ["$1,100.00"],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "287.jpg"
+    }
+}

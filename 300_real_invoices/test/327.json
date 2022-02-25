@@ -1,0 +1,359 @@
+{
+    "comment": "low wuality image",
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                33,
+                0,
+                94,
+                28
+            ],
+            "text": "�"
+        },
+        {
+            "id": 9,
+            "bbox": [
+                40,
+                34,
+                94,
+                47
+            ],
+            "text": "Service"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                98,
+                35,
+                149,
+                47
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                69,
+                68,
+                96,
+                76
+            ],
+            "text": "�ite:"
+        },
+        {
+            "id": 18,
+            "bbox": [
+                72,
+                98,
+                89,
+                103
+            ],
+            "text": "se"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                144,
+                98,
+                181,
+                104
+            ],
+            "text": "ory"
+        },
+        {
+            "id": 26,
+            "bbox": [
+                72,
+                122,
+                96,
+                128
+            ],
+            "text": "tee"
+        },
+        {
+            "id": 30,
+            "bbox": [
+                144,
+                122,
+                216,
+                129
+            ],
+            "text": "goa"
+        },
+        {
+            "id": 34,
+            "bbox": [
+                171,
+                130,
+                225,
+                136
+            ],
+            "text": "estoy"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                144,
+                138,
+                181,
+                143
+            ],
+            "text": "Sar"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                72,
+                156,
+                115,
+                162
+            ],
+            "text": "Peet"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                144,
+                157,
+                187,
+                162
+            ],
+            "text": "cane"
+        },
+        {
+            "id": 50,
+            "bbox": [
+                144,
+                176,
+                206,
+                182
+            ],
+            "text": "etgeunyeci"
+        },
+        {
+            "id": 54,
+            "bbox": [
+                69,
+                232,
+                113,
+                237
+            ],
+            "text": "frome"
+        },
+        {
+            "id": 58,
+            "bbox": [
+                337,
+                312,
+                343,
+                317
+            ],
+            "text": "�"
+        },
+        {
+            "id": 62,
+            "bbox": [
+                43,
+                315,
+                67,
+                343
+            ],
+            "text": "satay"
+        },
+        {
+            "id": 63,
+            "bbox": [
+                73,
+                315,
+                95,
+                343
+            ],
+            "text": "tg"
+        },
+        {
+            "id": 67,
+            "bbox": [
+                252,
+                328,
+                258,
+                333
+            ],
+            "text": "�"
+        },
+        {
+            "id": 71,
+            "bbox": [
+                47,
+                343,
+                91,
+                350
+            ],
+            "text": "mre"
+        },
+        {
+            "id": 75,
+            "bbox": [
+                337,
+                344,
+                343,
+                349
+            ],
+            "text": "�"
+        },
+        {
+            "id": 79,
+            "bbox": [
+                337,
+                359,
+                343,
+                364
+            ],
+            "text": "*"
+        },
+        {
+            "id": 83,
+            "bbox": [
+                47,
+                359,
+                72,
+                366
+            ],
+            "text": "ca"
+        },
+        {
+            "id": 87,
+            "bbox": [
+                250,
+                382,
+                288,
+                387
+            ],
+            "text": "seein"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                347,
+                399,
+                353,
+                404
+            ],
+            "text": "�"
+        },
+        {
+            "id": 95,
+            "bbox": [
+                341,
+                433,
+                356,
+                438
+            ],
+            "text": "ne"
+        },
+        {
+            "id": 99,
+            "bbox": [
+                87,
+                551,
+                114,
+                556
+            ],
+            "text": "uae"
+        },
+        {
+            "id": 100,
+            "bbox": [
+                120,
+                552,
+                138,
+                556
+            ],
+            "text": "en"
+        },
+        {
+            "id": 101,
+            "bbox": [
+                143,
+                551,
+                215,
+                557
+            ],
+            "text": "asunder"
+        },
+        {
+            "id": 105,
+            "bbox": [
+                307,
+                543,
+                313,
+                554
+            ],
+            "text": "P"
+        },
+        {
+            "id": 106,
+            "bbox": [
+                323,
+                543,
+                387,
+                560
+            ],
+            "text": "JotForn"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "for_annotation/327.jpg"
+    }
+}

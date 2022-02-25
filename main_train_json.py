@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser(description='CUTIE parameters')
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
 parser.add_argument('--doc_path', type=str, default='CutieMLproject/generated_invoices')
 parser.add_argument('--save_prefix', type=str, default='GeneratedInvoices', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='CutieMLproject/test') # leave empty if no test data provided
+parser.add_argument('--test_path', type=str, default='CutieMLproject/test')  # leave empty if no test data provided
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
@@ -189,14 +189,14 @@ if __name__ == '__main__':
     summary_writer = tf.summary.FileWriter(summary_path, tf.get_default_graph(), flush_secs=10)
 
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
-    config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=True,gpu_options=gpu_options)
+    config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=True, gpu_options=gpu_options)
     config.gpu_options.allow_growth = True
-    #config.gpu.set_per_process_memory_growth=True
-    
+    # config.gpu.set_per_process_memory_growth=True
+
     # Assume that you have 12GB of GPU memory and want to allocate ~4GB:
-    #gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
-    #sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
-    
+    # gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
+    # sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+
     with tf.Session(config=config) as sess:
         sess.run(tf.global_variables_initializer())
 

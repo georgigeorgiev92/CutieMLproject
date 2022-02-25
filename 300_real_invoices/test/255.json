@@ -1,0 +1,489 @@
+{
+    "comment": "bad quality image",
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                132,
+                37,
+                225,
+                48
+            ],
+            "text": "FREELANCE"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                230,
+                37,
+                295,
+                48
+            ],
+            "text": "INVOICE"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                338,
+                32,
+                375,
+                69
+            ],
+            "text": "@"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                40,
+                97,
+                66,
+                104
+            ],
+            "text": "Cctient"
+        },
+        {
+            "id": 15,
+            "bbox": [
+                69,
+                97,
+                119,
+                104
+            ],
+            "text": "Information"
+        },
+        {
+            "id": 19,
+            "bbox": [
+                215,
+                97,
+                247,
+                104
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 20,
+            "bbox": [
+                250,
+                97,
+                280,
+                104
+            ],
+            "text": "Details"
+        },
+        {
+            "id": 24,
+            "bbox": [
+                40,
+                124,
+                62,
+                130
+            ],
+            "text": "Name"
+        },
+        {
+            "id": 28,
+            "bbox": [
+                215,
+                122,
+                275,
+                138
+            ],
+            "text": "lennon"
+        },
+        {
+            "id": 32,
+            "bbox": [
+                41,
+                137,
+                48,
+                142
+            ],
+            "text": "Jane"
+        },
+        {
+            "id": 33,
+            "bbox": [
+                51,
+                137,
+                77,
+                142
+            ],
+            "text": "Smith"
+        },
+        {
+            "id": 37,
+            "bbox": [
+                40,
+                153,
+                62,
+                160
+            ],
+            "text": "ait"
+        },
+        {
+            "id": 41,
+            "bbox": [
+                215,
+                163,
+                233,
+                168
+            ],
+            "text": "oun"
+        },
+        {
+            "id": 45,
+            "bbox": [
+                215,
+                150,
+                242,
+                156
+            ],
+            "text": "nvoie"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                245,
+                150,
+                262,
+                156
+            ],
+            "text": "Date"
+        },
+        {
+            "id": 50,
+            "bbox": [
+                41,
+                166,
+                118,
+                173
+            ],
+            "text": "peste"
+        },
+        {
+            "id": 54,
+            "bbox": [
+                40,
+                183,
+                64,
+                190
+            ],
+            "text": "Phone"
+        },
+        {
+            "id": 55,
+            "bbox": [
+                67,
+                183,
+                97,
+                190
+            ],
+            "text": "Number"
+        },
+        {
+            "id": 59,
+            "bbox": [
+                69,
+                196,
+                89,
+                202
+            ],
+            "text": "ses"
+        },
+        {
+            "id": 63,
+            "bbox": [
+                40,
+                213,
+                71,
+                220
+            ],
+            "text": "Address"
+        },
+        {
+            "id": 67,
+            "bbox": [
+                72,
+                228,
+                89,
+                232
+            ],
+            "text": "iso"
+        },
+        {
+            "id": 68,
+            "bbox": [
+                92,
+                227,
+                112,
+                232
+            ],
+            "text": "Sut"
+        },
+        {
+            "id": 72,
+            "bbox": [
+                72,
+                236,
+                102,
+                242
+            ],
+            "text": "ian"
+        },
+        {
+            "id": 76,
+            "bbox": [
+                40,
+                258,
+                68,
+                265
+            ],
+            "text": "Servic"
+        },
+        {
+            "id": 77,
+            "bbox": [
+                71,
+                258,
+                85,
+                265
+            ],
+            "text": "Uist"
+        },
+        {
+            "id": 81,
+            "bbox": [
+                44,
+                298,
+                88,
+                314
+            ],
+            "text": "Re"
+        },
+        {
+            "id": 85,
+            "bbox": [
+                330,
+                308,
+                351,
+                314
+            ],
+            "text": "�1000"
+        },
+        {
+            "id": 89,
+            "bbox": [
+                45,
+                339,
+                75,
+                345
+            ],
+            "text": "sins"
+        },
+        {
+            "id": 90,
+            "bbox": [
+                78,
+                339,
+                94,
+                345
+            ],
+            "text": "ant"
+        },
+        {
+            "id": 94,
+            "bbox": [
+                44,
+                348,
+                59,
+                354
+            ],
+            "text": "Des"
+        },
+        {
+            "id": 98,
+            "bbox": [
+                87,
+                358,
+                97,
+                364
+            ],
+            "text": "et"
+        },
+        {
+            "id": 102,
+            "bbox": [
+                330,
+                354,
+                352,
+                360
+            ],
+            "text": "2000"
+        },
+        {
+            "id": 106,
+            "bbox": [
+                71,
+                389,
+                103,
+                396
+            ],
+            "text": "ting"
+        },
+        {
+            "id": 110,
+            "bbox": [
+                330,
+                399,
+                351,
+                405
+            ],
+            "text": "00"
+        },
+        {
+            "id": 114,
+            "bbox": [
+                171,
+                445,
+                187,
+                451
+            ],
+            "text": "at"
+        },
+        {
+            "id": 118,
+            "bbox": [
+                318,
+                444,
+                352,
+                453
+            ],
+            "text": "$70.00"
+        },
+        {
+            "id": 122,
+            "bbox": [
+                130,
+                487,
+                157,
+                494
+            ],
+            "text": "�Thank"
+        },
+        {
+            "id": 123,
+            "bbox": [
+                161,
+                487,
+                177,
+                494
+            ],
+            "text": "You"
+        },
+        {
+            "id": 124,
+            "bbox": [
+                180,
+                487,
+                195,
+                494
+            ],
+            "text": "For"
+        },
+        {
+            "id": 125,
+            "bbox": [
+                198,
+                487,
+                218,
+                494
+            ],
+            "text": "Your"
+        },
+        {
+            "id": 126,
+            "bbox": [
+                221,
+                487,
+                264,
+                494
+            ],
+            "text": "Business!"
+        },
+        {
+            "id": 130,
+            "bbox": [
+                307,
+                543,
+                313,
+                552
+            ],
+            "text": "P"
+        },
+        {
+            "id": 131,
+            "bbox": [
+                323,
+                546,
+                387,
+                560
+            ],
+            "text": "JotForm"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [32,33],
+            "value_text": ["Jane Smith"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [118],
+            "value_text": ["$70.00"],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "255.jpg"
+    }
+}
