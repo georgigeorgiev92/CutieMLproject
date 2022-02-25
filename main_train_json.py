@@ -7,6 +7,7 @@ import argparse, os
 import timeit
 from pprint import pprint
 
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 
 from data_loader_json import DataLoader
@@ -291,7 +292,6 @@ if __name__ == '__main__':
                 print('TRAINING ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f)' \
                       % (recall, acc_strict, acc_soft, max(training_recall), max(training_acc_strict),
                          max(training_acc_soft)))
-
             # calculate validation accuracy and display results
             if iter % params.validation_step == 0 and len(data_loader.validation_docs):
                 recalls, accs_strict, accs_soft = [], [], []
