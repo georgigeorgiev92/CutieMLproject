@@ -1,0 +1,338 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                241,
+                27,
+                289,
+                51
+            ],
+            "text": "Simple"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                297,
+                27,
+                353,
+                51
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                53,
+                41,
+                110,
+                50
+            ],
+            "text": "COMPANY"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                67,
+                56,
+                96,
+                66
+            ],
+            "text": "see"
+        },
+        {
+            "id": 18,
+            "bbox": [
+                245,
+                65,
+                274,
+                71
+            ],
+            "text": "aware"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                69,
+                65,
+                94,
+                73
+            ],
+            "text": "ae"
+        },
+        {
+            "id": 26,
+            "bbox": [
+                244,
+                71,
+                264,
+                99
+            ],
+            "text": "ae"
+        },
+        {
+            "id": 27,
+            "bbox": [
+                275,
+                71,
+                310,
+                99
+            ],
+            "text": "v0"
+        },
+        {
+            "id": 31,
+            "bbox": [
+                66,
+                102,
+                85,
+                130
+            ],
+            "text": "Bill"
+        },
+        {
+            "id": 32,
+            "bbox": [
+                89,
+                102,
+                104,
+                130
+            ],
+            "text": "to:"
+        },
+        {
+            "id": 36,
+            "bbox": [
+                65,
+                122,
+                98,
+                150
+            ],
+            "text": "campy"
+        },
+        {
+            "id": 37,
+            "bbox": [
+                100,
+                122,
+                119,
+                150
+            ],
+            "text": "tine"
+        },
+        {
+            "id": 41,
+            "bbox": [
+                69,
+                144,
+                110,
+                151
+            ],
+            "text": "ceo"
+        },
+        {
+            "id": 45,
+            "bbox": [
+                69,
+                170,
+                122,
+                176
+            ],
+            "text": "peel"
+        },
+        {
+            "id": 49,
+            "bbox": [
+                70,
+                178,
+                134,
+                184
+            ],
+            "text": "beehes"
+        },
+        {
+            "id": 53,
+            "bbox": [
+                69,
+                195,
+                112,
+                201
+            ],
+            "text": "orem"
+        },
+        {
+            "id": 57,
+            "bbox": [
+                70,
+                205,
+                113,
+                212
+            ],
+            "text": "Sissy"
+        },
+        {
+            "id": 61,
+            "bbox": [
+                70,
+                232,
+                136,
+                238
+            ],
+            "text": "‘thaegenestcon"
+        },
+        {
+            "id": 65,
+            "bbox": [
+                40,
+                274,
+                76,
+                281
+            ],
+            "text": "rates"
+        },
+        {
+            "id": 69,
+            "bbox": [
+                44,
+                312,
+                71,
+                317
+            ],
+            "text": "rete"
+        },
+        {
+            "id": 73,
+            "bbox": [
+                44,
+                330,
+                72,
+                335
+            ],
+            "text": "rete"
+        },
+        {
+            "id": 77,
+            "bbox": [
+                44,
+                348,
+                72,
+                353
+            ],
+            "text": "resets"
+        },
+        {
+            "id": 81,
+            "bbox": [
+                359,
+                348,
+                381,
+                354
+            ],
+            "text": "ome"
+        },
+        {
+            "id": 85,
+            "bbox": [
+                339,
+                379,
+                379,
+                390
+            ],
+            "text": "$213.51"
+        },
+        {
+            "id": 89,
+            "bbox": [
+                139,
+                492,
+                165,
+                522
+            ],
+            "text": "\"en"
+        },
+        {
+            "id": 90,
+            "bbox": [
+                170,
+                492,
+                198,
+                522
+            ],
+            "text": "nami"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                203,
+                506,
+                286,
+                511
+            ],
+            "text": "ape"
+        },
+        {
+            "id": 95,
+            "bbox": [
+                183,
+                521,
+                242,
+                526
+            ],
+            "text": "—-"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "for_annotation/328.jpg"
+    }
+}
