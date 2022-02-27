@@ -27,7 +27,7 @@ parser.add_argument('--test_path', type=str, default='combined') # leave empty i
 parser.add_argument('--restore_ckpt', type=bool, default=False)
 parser.add_argument('--restore_bertembedding_only', type=bool, default=False)  # effective when restore_ckpt is True
 parser.add_argument('--embedding_file', type=str, default='../graph/bert/multi_cased_L-12_H-768_A-12/bert_model.ckpt')
-parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph')
+parser.add_argument('--ckpt_path', type=str, default='..\\CutieMLproject\\graph\\Cutie_Checkpoints_highest_results')
 parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80c80)_iter_40000.ckpt')
 
 # dict
