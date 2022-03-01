@@ -1214,55 +1214,55 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [10,11],
+            "value_text": ["Your Company"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [22,23,24,28,29,30,31],
+            "value_text": ["555 Victoria Street Kangaroo Valley NSW 2786"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [ 60,61],
+            "value_text": ["Pixel Security"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [87,88,89,93,94,95,107],
+            "value_text": ["123 Bingelly Road Bingelly NSW 2000 Australia"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [70,71,72],
+            "value_text": ["19 August 2020"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [56],
+            "value_text": ["440001"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [208],
+            "value_text": ["$412.50"],
             "key_id": [],
             "key_text": []
         }
     ],
     "global_attributes": {
-        "file_id": "for_annotation/329.jpg"
+        "file_id": "329.jpg"
     }
 }
