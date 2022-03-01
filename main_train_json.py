@@ -18,7 +18,7 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
-parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
+parser.add_argument('--use_cutie2', type=bool, default=False)  # True to read image from doc_path
 parser.add_argument('--doc_path', type=str, default='invoice_data')
 parser.add_argument('--save_prefix', type=str, default='REALINVOICES', help='prefix for ckpt')
 parser.add_argument('--test_path', type=str, default='combined') # leave empty if no test data provided
