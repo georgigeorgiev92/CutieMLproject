@@ -18,10 +18,9 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='CutieMLproject/generated_invoices')
-parser.add_argument('--save_prefix', type=str, default='GeneratedInvoices', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='CutieMLproject/test')  # leave empty if no test data provided
-
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/Baseline/train')
+parser.add_argument('--save_prefix', type=str, default='Baseline', help='prefix for ckpt')
+parser.add_argument('--test_path', type=str, default='CutieMLproject/Baseline/test') 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
 parser.add_argument('--restore_bertembedding_only', type=bool, default=False)  # effective when restore_ckpt is True
@@ -31,11 +30,11 @@ parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/40000')  # 40000 or 20000TC or table
+parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/baseline')  # 40000 or 20000TC or table
 parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
 parser.add_argument('--text_case', type=bool, default=True)  # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
-parser.add_argument('--dict_path', type=str, default='dict/40000')  # not used if load_dict is True
+parser.add_argument('--dict_path', type=str, default='dict/baseline')  # not used if load_dict is True
 
 # data manipulation
 parser.add_argument('--segment_grid', type=bool,
@@ -45,10 +44,10 @@ parser.add_argument('--cols_segment', type=int, default=72)
 parser.add_argument('--augment_strategy', type=int,
                     default=1)  # 1 for increasing grid shape size, 2 for gaussian around target shape
 parser.add_argument('--positional_mapping_strategy', type=int, default=1)
-parser.add_argument('--rows_target', type=int, default=100)
-parser.add_argument('--cols_target', type=int, default=100)
-parser.add_argument('--rows_ulimit', type=int, default=100)  # used when data augmentation is true
-parser.add_argument('--cols_ulimit', type=int, default=100)
+parser.add_argument('--rows_target', type=int, default=150)
+parser.add_argument('--cols_target', type=int, default=150)
+parser.add_argument('--rows_ulimit', type=int, default=150)  # used when data augmentation is true
+parser.add_argument('--cols_ulimit', type=int, default=150)
 parser.add_argument('--fill_bbox', type=bool, default=False)  # fill bbox with dict_id / label_id
 
 parser.add_argument('--data_augmentation_extra', type=bool, default=True)  # randomly expand rows/cols
@@ -57,7 +56,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=16)
+parser.add_argument('--batch_size', type=int, default=4)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
@@ -78,7 +77,7 @@ parser.add_argument('--test_step', type=int, default=200)
 parser.add_argument('--ckpt_save_step', type=int, default=500)
 
 # model
-parser.add_argument('--embedding_size', type=int, default=256)  # not used for bert embedding which has 768 as default
+parser.add_argument('--embedding_size', type=int, default=128)  # not used for bert embedding which has 768 as default
 parser.add_argument('--weight_decay', type=float, default=0.0005)
 parser.add_argument('--eps', type=float, default=1e-6)
 
