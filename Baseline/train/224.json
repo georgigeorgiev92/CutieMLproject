@@ -1119,8 +1119,8 @@
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [312123123123213312],
-            "value_text": ["#000000006"],
+            "value_id": [36],
+            "value_text": ["#11000000004"],
             "key_id": [],
             "key_text": []
         },

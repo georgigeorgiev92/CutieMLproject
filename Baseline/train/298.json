@@ -725,8 +725,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [31,32,33,34,35,36,37,42,43,44,48,49],
-            "value_text": ["2nd Avenue corner West Brooke Drive. 125 Los Angeles, California 90478 United States"],
+            "value_id": [31,32,33,34,35,36,37,42,43,44,48,49,50,51],
+            "value_text": ["2nd Avenue corner West Brooke Drive. 125 Los Angeles, California 90478 United States of America"],
             "key_id": [],
             "key_text": []
         },

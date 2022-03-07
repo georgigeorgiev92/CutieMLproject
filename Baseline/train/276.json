@@ -418,7 +418,7 @@
                 253,
                 324
             ],
-            "text": "Avenue,"
+            "text": "Avenue, CA"
         },
         {
             "id": 128,
@@ -486,7 +486,7 @@
         {
             "field_name": "RECEIVER_ADDRESS",
             "value_id": [111,112,113,123,124],
-            "value_text": [ "88 Eolinton Square West Avenue"],
+            "value_text": [ "88 Eolinton Square West Avenue, CA"],
             "key_id": [],
             "key_text": []
         },

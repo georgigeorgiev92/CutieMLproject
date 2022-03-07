@@ -178,7 +178,7 @@
                 221,
                 281
             ],
-            "text": "rwv-0007"
+            "text": "inv-0007"
         },
         {
             "id": 56,
@@ -580,7 +580,7 @@
         {
             "field_name": "INVOICE_NUMBER",
             "value_id": [52],
-            "value_text": ["rwv-0007"],
+            "value_text": ["inv-0007"],
             "key_id": [],
             "key_text": []
         },

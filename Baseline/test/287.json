@@ -545,7 +545,7 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [72,73,7475,79,80,81,82 ],
+            "value_id": [72,73,74,75,79,80,81,82 ],
            "value_text": ["9696 Coney Island Drive San Francisco, CA 61584"],
             "key_id": [],
             "key_text": []

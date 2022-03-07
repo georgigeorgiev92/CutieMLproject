@@ -516,7 +516,7 @@
         {
             "field_name": "RECEIVER_ADDRESS",
             "value_id": [11,12,13 ],
-            "value_text": ["347 Park st Austin"],
+            "value_text": ["347 Park st Austin, tx"],
             "key_id": [],
             "key_text": []
         },

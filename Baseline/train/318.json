@@ -398,7 +398,7 @@
                 444,
                 216
             ],
-            "text": "states"
+            "text": "States"
         },
         {
             "id": 90,
@@ -575,8 +575,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [63,64,65,66,70,71,75,76],
-            "value_text": ["4348 Walnut Hill Drive Portland OH 45204"],
+            "value_id": [63,64,65,66,70,71,75,76,85,86],
+            "value_text": ["4348 Walnut Hill Drive Portland OH 45204, United States"],
             "key_id": [],
             "key_text": []
         },

@@ -534,8 +534,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [3131231231223312],
-            "value_text": ["Green Catering"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },

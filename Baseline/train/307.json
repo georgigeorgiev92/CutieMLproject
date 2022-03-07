@@ -198,7 +198,7 @@
                 124,
                 233
             ],
-            "text": "et"
+            "text": "New"
         },
         {
             "id": 49,
@@ -208,7 +208,7 @@
                 143,
                 233
             ],
-            "text": "Yor"
+            "text": "York, NY"
         },
         {
             "id": 50,
@@ -218,7 +218,7 @@
                 185,
                 233
             ],
-            "text": "10008"
+            "text": "100006"
         },
         {
             "id": 54,
@@ -248,7 +248,7 @@
                 131,
                 247
             ],
-            "text": "Unted"
+            "text": "United"
         },
         {
             "id": 60,
@@ -388,7 +388,7 @@
                 180,
                 306
             ],
-            "text": "ores."
+            "text": "Walter st."
         },
         {
             "id": 98,
@@ -398,7 +398,7 @@
                 152,
                 315
             ],
-            "text": "wr"
+            "text": "NY"
         },
         {
             "id": 99,
@@ -408,7 +408,7 @@
                 180,
                 306
             ],
-            "text": "0002"
+            "text": "100002"
         },
         {
             "id": 103,
@@ -721,8 +721,8 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [42,43,44,59,60,61,62],
-            "value_text": ["1012, 57th Street Unted Sates of America"],
+            "value_id": [42,43,44,48,49,50,59,60,61,62],
+            "value_text": ["1012, 57th Street, New York, NY 48,49,50, United Sates of America"],
             "key_id": [],
             "key_text": []
         },
@@ -735,8 +735,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [103,104,105,106],
-            "value_text": ["0002 United States of America"],
+            "value_id": [97,98,99,103,104,105,106],
+            "value_text": ["Walter st. NY 100002 United States of America"],
             "key_id": [],
             "key_text": []
         },

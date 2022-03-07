@@ -594,8 +594,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [18,19,20],
-            "value_text": ["MR. FRANCO SMITH"],
+            "value_id": [9],
+            "value_text": ["COMPANY"],
             "key_id": [],
             "key_text": []
         },
@@ -608,15 +608,15 @@
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [45,46],
-            "value_text": ["MR. ROBERTITH"],
+            "value_id": [18,19,20],
+            "value_text": ["MR. FRANCO SMITH"],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [45,46]],
+            "value_text": ["MR. ROBERTITH"],
             "key_id": [],
             "key_text": []
         },

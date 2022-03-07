@@ -1,0 +1,488 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                897,
+                52,
+                943,
+                65
+            ],
+            "text": "Your"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                950,
+                55,
+                972,
+                65
+            ],
+            "text": "name"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                62,
+                37,
+                111,
+                95
+            ],
+            "text": "G"
+        },
+        {
+            "id": 14,
+            "bbox": [
+                867,
+                75,
+                966,
+                93
+            ],
+            "text": "your@mail."
+        },
+        {
+            "id": 18,
+            "bbox": [
+                968,
+                79,
+                976,
+                89
+            ],
+            "text": "ci"
+        },
+        {
+            "id": 22,
+            "bbox": [
+                974,
+                23,
+                1052,
+                90
+            ],
+            "text": "14]"
+        },
+        {
+            "id": 26,
+            "bbox": [
+                849,
+                99,
+                888,
+                112
+            ],
+            "text": "Your"
+        },
+        {
+            "id": 27,
+            "bbox": [
+                894,
+                98,
+                941,
+                116
+            ],
+            "text": "fancy"
+        },
+        {
+            "id": 28,
+            "bbox": [
+                948,
+                99,
+                1002,
+                114
+            ],
+            "text": "street,"
+        },
+        {
+            "id": 32,
+            "bbox": [
+                881,
+                122,
+                914,
+                136
+            ],
+            "text": "The"
+        },
+        {
+            "id": 33,
+            "bbox": [
+                921,
+                122,
+                946,
+                140
+            ],
+            "text": "Big"
+        },
+        {
+            "id": 34,
+            "bbox": [
+                954,
+                122,
+                1004,
+                140
+            ],
+            "text": "Apple"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                67,
+                166,
+                316,
+                216
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                848,
+                241,
+                942,
+                254
+            ],
+            "text": "Awesome"
+        },
+        {
+            "id": 43,
+            "bbox": [
+                949,
+                240,
+                1004,
+                254
+            ],
+            "text": "client"
+        },
+        {
+            "id": 47,
+            "bbox": [
+                66,
+                242,
+                243,
+                291
+            ],
+            "text": "#123"
+        },
+        {
+            "id": 51,
+            "bbox": [
+                867,
+                264,
+                1004,
+                282
+            ],
+            "text": "your@mail.com"
+        },
+        {
+            "id": 55,
+            "bbox": [
+                849,
+                288,
+                888,
+                301
+            ],
+            "text": "Your"
+        },
+        {
+            "id": 56,
+            "bbox": [
+                894,
+                287,
+                941,
+                305
+            ],
+            "text": "fancy"
+        },
+        {
+            "id": 57,
+            "bbox": [
+                948,
+                288,
+                1002,
+                303
+            ],
+            "text": "street,"
+        },
+        {
+            "id": 61,
+            "bbox": [
+                63,
+                312,
+                124,
+                326
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 62,
+            "bbox": [
+                131,
+                312,
+                227,
+                330
+            ],
+            "text": "description"
+        },
+        {
+            "id": 66,
+            "bbox": [
+                881,
+                312,
+                914,
+                326
+            ],
+            "text": "The"
+        },
+        {
+            "id": 67,
+            "bbox": [
+                921,
+                312,
+                946,
+                330
+            ],
+            "text": "Big"
+        },
+        {
+            "id": 68,
+            "bbox": [
+                954,
+                312,
+                1004,
+                330
+            ],
+            "text": "Apple"
+        },
+        {
+            "id": 72,
+            "bbox": [
+                65,
+                443,
+                150,
+                459
+            ],
+            "text": "03/22/19"
+        },
+        {
+            "id": 76,
+            "bbox": [
+                224,
+                452,
+                334,
+                466
+            ],
+            "text": "Wireframes"
+        },
+        {
+            "id": 77,
+            "bbox": [
+                342,
+                452,
+                368,
+                466
+            ],
+            "text": "for"
+        },
+        {
+            "id": 78,
+            "bbox": [
+                376,
+                452,
+                449,
+                470
+            ],
+            "text": "Landing"
+        },
+        {
+            "id": 79,
+            "bbox": [
+                459,
+                452,
+                504,
+                470
+            ],
+            "text": "Page"
+        },
+        {
+            "id": 83,
+            "bbox": [
+                664,
+                452,
+                686,
+                466
+            ],
+            "text": "02"
+        },
+        {
+            "id": 87,
+            "bbox": [
+                755,
+                452,
+                861,
+                469
+            ],
+            "text": "$500/week"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                905,
+                452,
+                964,
+                469
+            ],
+            "text": "$1000"
+        },
+        {
+            "id": 95,
+            "bbox": [
+                664,
+                516,
+                686,
+                530
+            ],
+            "text": "01"
+        },
+        {
+            "id": 99,
+            "bbox": [
+                755,
+                516,
+                861,
+                533
+            ],
+            "text": "$500/week"
+        },
+        {
+            "id": 103,
+            "bbox": [
+                905,
+                516,
+                952,
+                533
+            ],
+            "text": "$500"
+        },
+        {
+            "id": 107,
+            "bbox": [
+                225,
+                516,
+                270,
+                534
+            ],
+            "text": "Logo"
+        },
+        {
+            "id": 108,
+            "bbox": [
+                278,
+                516,
+                339,
+                534
+            ],
+            "text": "design"
+        },
+        {
+            "id": 112,
+            "bbox": [
+                905,
+                570,
+                970,
+                587
+            ],
+            "text": "$1500"
+        },
+        {
+            "id": 116,
+            "bbox": [
+                223,
+                695,
+                298,
+                709
+            ],
+            "text": "Internet"
+        },
+        {
+            "id": 117,
+            "bbox": [
+                306,
+                695,
+                342,
+                709
+            ],
+            "text": "bills"
+        },
+        {
+            "id": 121,
+            "bbox": [
+                747,
+                695,
+                768,
+                709
+            ],
+            "text": "o1"
+        },
+        {
+            "id": 125,
+            "bbox": [
+                897,
+                695,
+                949,
+                712
+            ],
+            "text": "$82.5"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [5,6],
+            "value_text": ["Your name"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [26,27,28,32,33,34],
+            "value_text": ["Your fancy street,The Big Apple"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [42,43],
+            "value_text": ["Awesome client"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [55,56,57,66,67,68],
+            "value_text": [ "Your fancy street,The Big Apple"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [72],
+            "value_text": ["03/22/19"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [ 47],
+            "value_text": ["#123"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [112],
+            "value_text": ["$1500"],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "231.jpg"
+    }
+}

@@ -1047,7 +1047,7 @@
         {
             "field_name": "TOTAL_AMOUNT",
             "value_id": [131,132],
-            "value_text": ["USD1,545.00"],
+            "value_text": ["USD 1,545.00"],
             "key_id": [],
             "key_text": []
         }

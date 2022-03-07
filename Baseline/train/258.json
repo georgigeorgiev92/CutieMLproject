@@ -408,7 +408,7 @@
                 155,
                 923
             ],
-            "text": "MintorApp"
+            "text": "MinterApp"
         },
         {
             "id": 109,
@@ -485,7 +485,7 @@
         {
             "field_name": "SENDER_NAME",
             "value_id": [105],
-            "value_text": ["MintorApp"],
+            "value_text": ["MinterApp"],
             "key_id": [],
             "key_text": []
         },
