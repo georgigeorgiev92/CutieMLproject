@@ -108,7 +108,7 @@
                 41,
                 81
             ],
-            "text": "Dallas,"
+            "text": "al,"
         },
         {
             "id": 31,
@@ -118,7 +118,7 @@
                 64,
                 81
             ],
-            "text": "Texas"
+            "text": "fron"
         },
         {
             "id": 32,
@@ -128,7 +128,7 @@
                 87,
                 90
             ],
-            "text": "76541"
+            "text": "7581"
         },
         {
             "id": 36,
@@ -228,7 +228,7 @@
                 233,
                 105
             ],
-            "text": "Dallas"
+            "text": "oto"
         },
         {
             "id": 61,
@@ -238,7 +238,7 @@
                 243,
                 104
             ],
-            "text": "Texas"
+            "text": "Tro"
         },
         {
             "id": 62,
@@ -248,7 +248,7 @@
                 277,
                 104
             ],
-            "text": "76541"
+            "text": "76581"
         },
         {
             "id": 66,
@@ -721,8 +721,8 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [41,42,43,60,61,62],
-            "value_text": ["1273 Brown Street, Dallas, Texas 76541"],
+            "value_id": [41,42,43],
+            "value_text": ["1273 Brown Street"],
             "key_id": [],
             "key_text": []
         },
@@ -735,8 +735,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [24,25,26,30,31,32],
-            "value_text": ["1640 Park Street Dallas, Texas 76541"],
+            "value_id": [24,25,26 ],
+            "value_text": ["1640 Park Street"],
             "key_id": [],
             "key_text": []
         },

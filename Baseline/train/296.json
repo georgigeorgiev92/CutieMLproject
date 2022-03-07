@@ -18,7 +18,7 @@
                 220,
                 202
             ],
-            "text": "CREATIVE"
+            "text": "REA"
         },
         {
             "id": 13,
@@ -914,8 +914,8 @@
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [9],
-            "value_text": ["CREATIVE STUDIOS"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },

@@ -1075,8 +1075,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [86,87,91,92,105,106],
-            "value_text": ["Test Street Test City,Test Country"],
+            "value_id": [86,87,91,92],
+            "value_text": ["Test Street Test City,"],
             "key_id": [],
             "key_text": []
         },

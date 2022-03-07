@@ -711,8 +711,8 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [11,12,13,21,22,23,24],
-            "value_text": ["123 Anywhere St., Any City, ST 12345"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
@@ -725,8 +725,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [],
-            "value_text": [],
+            "value_id": [11,12,13,21,22,23,24 ],
+            "value_text": ["123 Anywhere St., Any City, ST 12345"],
             "key_id": [],
             "key_text": []
         },

@@ -128,7 +128,7 @@
                 536,
                 135
             ],
-            "text": "Glasgow"
+            "text": "Gaegow"
         },
         {
             "id": 39,
@@ -168,7 +168,7 @@
                 88,
                 184
             ],
-            "text": "0051"
+            "text": "1"
         },
         {
             "id": 49,
@@ -228,7 +228,7 @@
                 591,
                 198
             ],
-            "text": "Suffolk"
+            "text": "Stok"
         },
         {
             "id": 61,
@@ -238,7 +238,7 @@
                 595,
                 207
             ],
-            "text": "Street"
+            "text": "Steet"
         },
         {
             "id": 65,
@@ -268,7 +268,7 @@
                 162,
                 204
             ],
-            "text": "06/05/2017"
+            "text": "90872017"
         },
         {
             "id": 74,
@@ -358,7 +358,7 @@
                 526,
                 224
             ],
-            "text": "United"
+            "text": "�Unite"
         },
         {
             "id": 92,
@@ -658,56 +658,56 @@
                 635,
                 466
             ],
-            "text": "0.00"
+            "text": "�0.00"
         }
     ],
     "fields": [
         {
             "field_name": "SENDER_NAME",
-            "value_id": [23,24],
-            "value_text": ["Discovery Designs"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [32,33,34,38,39,40],
-            "value_text": ["4418 Vincent Pace Glasgow Gt 2ER Scottland"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_NAME",
-            "value_id": [53,54],
-            "value_text": ["Barrington Publishers"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [58,59,60,61,74,75,76,91,92],
-            "value_text": ["17 Great Suffolk Street Londonc SE ONS United Kingdom"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_DATE",
-            "value_id": [70],
-            "value_text": ["06/05/2017"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "INVOICE_NUMBER",
-            "value_id": [45],
-            "value_text": ["0051"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [190],
-            "value_text": ["0.00"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         }

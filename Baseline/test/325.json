@@ -68,7 +68,7 @@
                 154,
                 378
             ],
-            "text": "City,"
+            "text": "ity,"
         },
         {
             "id": 21,
@@ -78,7 +78,7 @@
                 157,
                 387
             ],
-            "text": "St"
+            "text": "S"
         },
         {
             "id": 25,
@@ -158,7 +158,7 @@
                 590,
                 477
             ],
-            "text": "INV-"
+            "text": "IN"
         },
         {
             "id": 51,
@@ -631,8 +631,8 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [20,21,25,29,33,34],
-            "value_text": ["City, State Zip,United States"],
+            "value_id": [33,34 ],
+            "value_text": ["United States"],
             "key_id": [],
             "key_text": []
         },

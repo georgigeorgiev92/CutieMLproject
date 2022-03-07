@@ -178,7 +178,7 @@
                 232,
                 186
             ],
-            "text": "443 Clay Street, TX 00978"
+            "text": "443 Clay Street"
         },
         {
             "id": 38,
@@ -506,7 +506,7 @@
         {
             "field_name": "RECEIVER_ADDRESS",
             "value_id": [34],
-            "value_text": ["443 Clay Street,TX 00978"],
+            "value_text": ["443 Clay Street"],
             "key_id": [],
             "key_text": []
         },

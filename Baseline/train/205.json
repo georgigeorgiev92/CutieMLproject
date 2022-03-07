@@ -1896,8 +1896,8 @@
         },
         {
             "field_name": "TOTAL_AMOUNT",
-            "value_id": [282],
-            "value_text": ["$11,522.10"],
+            "value_id": [],
+            "value_text": [],
             "key_id": [],
             "key_text": []
         }

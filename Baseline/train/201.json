@@ -605,7 +605,7 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [67,68,69,73,74,78,82],
+            "value_id": [67,68,69,73,74,78,8],
             "value_text": ["120 PARK AVE. NEW YORK Ny 10017"],
             "key_id": [],
             "key_text": []

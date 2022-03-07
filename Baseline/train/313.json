@@ -1271,8 +1271,8 @@
         },
         {
             "field_name": "SENDER_ADDRESS",
-            "value_id": [25,26,27,35,43,51],
-            "value_text": ["Your Business Address City Country Postal"],
+            "value_id": [25,26,27,35,43],
+            "value_text": ["Your Business Address City Country"],
             "key_id": [],
             "key_text": []
         },
@@ -1285,8 +1285,8 @@
         },
         {
             "field_name": "RECEIVER_ADDRESS",
-            "value_id": [31,39,47,55],
-            "value_text": ["Address City Country Postal"],
+            "value_id": [31,39,47],
+            "value_text": ["Address City Country"],
             "key_id": [],
             "key_text": []
         },

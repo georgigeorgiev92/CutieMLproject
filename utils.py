@@ -18,6 +18,7 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
     num_correct = 0
     num_correct_strict = 0
     num_correct_soft = 0
+    #The shape attribute for numpy arrays returns the dimensions of the array
     num_all = grid_table.shape[0] * (model_output_val.shape[-1]-1)
     for b in range(grid_table.shape[0]):
         data_input_flat = grid_table[b,:,:,0].reshape([-1])

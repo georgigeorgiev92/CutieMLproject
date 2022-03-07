@@ -438,7 +438,7 @@
                 67,
                 264
             ],
-            "text": "Madinah, KSA"
+            "text": "Madinah,"
         },
         {
             "id": 100,
@@ -1266,7 +1266,7 @@
         {
             "field_name": "RECEIVER_ADDRESS",
             "value_id": [79,80,81,82,83,84,85,86,96],
-            "value_text": ["Second Ring Road Al Farsi Dearson Building; Sultanah, Madinah,KSA"],
+            "value_text": ["Second Ring Road Al Farsi Dearson Building; Sultanah, Madinah,"],
             "key_id": [],
             "key_text": []
         },

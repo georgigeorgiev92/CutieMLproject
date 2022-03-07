@@ -925,7 +925,7 @@
         {
             "field_name": "SENDER_NAME",
             "value_id": [ 32,33],
-            "value_text": ["Martin Harling"],
+            "value_text": [ "Martin Harling"  ],
             "key_id": [],
             "key_text": []
         },
