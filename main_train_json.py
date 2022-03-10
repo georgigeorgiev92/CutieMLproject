@@ -18,9 +18,9 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='CutieMLproject/generated_invoices')
-parser.add_argument('--save_prefix', type=str, default='GeneratedInvoices', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='CutieMLproject/test')  # leave empty if no test data provided
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/Multiclass_baseline/small/train')
+parser.add_argument('--save_prefix', type=str, default='Multiclass_baseline_s', help='prefix for ckpt')
+parser.add_argument('--test_path', type=str, default='CutieMLproject/Multiclass_baseline/small/test')
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
@@ -35,7 +35,7 @@ parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/d
 parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
 parser.add_argument('--text_case', type=bool, default=True)  # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
-parser.add_argument('--dict_path', type=str, default='dict/40000')  # not used if load_dict is True
+parser.add_argument('--dict_path', type=str, default='dict/Multiclass_baseline_s')  # not used if load_dict is True
 
 # data manipulation
 parser.add_argument('--segment_grid', type=bool,
@@ -57,7 +57,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=16)
+parser.add_argument('--batch_size', type=int, default=4)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
