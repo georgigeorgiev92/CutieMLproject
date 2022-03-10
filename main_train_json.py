@@ -18,9 +18,9 @@ from model_cutie2_aspp import CUTIE2 as CUTIEv2
 parser = argparse.ArgumentParser(description='CUTIE parameters')
 # data
 parser.add_argument('--use_cutie2', type=bool, default=True)  # True to read image from doc_path
-parser.add_argument('--doc_path', type=str, default='CutieMLproject/Multiclass_baseline/small/train')
+parser.add_argument('--doc_path', type=str, default='CutieMLproject/Data_centric_genuine/train')
 parser.add_argument('--save_prefix', type=str, default='Multiclass_baseline_s', help='prefix for ckpt')
-parser.add_argument('--test_path', type=str, default='CutieMLproject/Multiclass_baseline/small/test')
+parser.add_argument('--test_path', type=str, default='CutieMLproject/Data_centric_genuine/test')
 
 # ckpt
 parser.add_argument('--restore_ckpt', type=bool, default=False)
@@ -31,11 +31,11 @@ parser.add_argument('--ckpt_file', type=str, default='CUTIE2_dilate_d20000c7(r80
 
 # dict
 parser.add_argument('--load_dict', type=bool, default=True, help='True to work based on an existing dict')
-parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/40000')  # 40000 or 20000TC or table
+parser.add_argument('--load_dict_from_path', type=str, default='CutieMLproject/dict/Data_centric_genuine')  # 40000 or 20000TC or table
 parser.add_argument('--tokenize', type=bool, default=True)  # tokenize input text
 parser.add_argument('--text_case', type=bool, default=True)  # case sensitive
 parser.add_argument('--update_dict', type=bool, default=False)
-parser.add_argument('--dict_path', type=str, default='dict/Multiclass_baseline_s')  # not used if load_dict is True
+parser.add_argument('--dict_path', type=str, default='dict/Data_centric_genuine')  # not used if load_dict is True
 
 # data manipulation
 parser.add_argument('--segment_grid', type=bool,
