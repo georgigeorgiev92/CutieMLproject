@@ -1,0 +1,535 @@
+{
+  "text_boxes": [
+    {
+      "id": 1,
+      "bbox": [
+        240,
+        30,
+        291,
+        44
+      ],
+      "text": "Bulgaria"
+    },
+    {
+      "id": 2,
+      "bbox": [
+        240,
+        46,
+        280,
+        60
+      ],
+      "text": "90768"
+    },
+    {
+      "id": 3,
+      "bbox": [
+        240,
+        62,
+        302,
+        76
+      ],
+      "text": "Pforzheim"
+    },
+    {
+      "id": 4,
+      "bbox": [
+        240,
+        78,
+        263,
+        92
+      ],
+      "text": "Am "
+    },
+    {
+      "id": 5,
+      "bbox": [
+        263,
+        78,
+        317,
+        92
+      ],
+      "text": "Jägerhof"
+    },
+    {
+      "id": 6,
+      "bbox": [
+        30,
+        124,
+        56,
+        137
+      ],
+      "text": "Côte "
+    },
+    {
+      "id": 7,
+      "bbox": [
+        56,
+        124,
+        97,
+        137
+      ],
+      "text": "d’Ivoire "
+    },
+    {
+      "id": 8,
+      "bbox": [
+        97,
+        124,
+        130,
+        137
+      ],
+      "text": "89520 "
+    },
+    {
+      "id": 9,
+      "bbox": [
+        130,
+        124,
+        157,
+        137
+      ],
+      "text": "Sofia "
+    },
+    {
+      "id": 10,
+      "bbox": [
+        157,
+        124,
+        178,
+        137
+      ],
+      "text": "Am "
+    },
+    {
+      "id": 11,
+      "bbox": [
+        178,
+        124,
+        230,
+        137
+      ],
+      "text": "Klosterhof"
+    },
+    {
+      "id": 12,
+      "bbox": [
+        240,
+        99,
+        282,
+        114
+      ],
+      "text": "Adesso "
+    },
+    {
+      "id": 13,
+      "bbox": [
+        282,
+        99,
+        328,
+        114
+      ],
+      "text": "Bulgaria "
+    },
+    {
+      "id": 14,
+      "bbox": [
+        328,
+        99,
+        360,
+        114
+      ],
+      "text": "EOOD"
+    },
+    {
+      "id": 15,
+      "bbox": [
+        30,
+        144,
+        71,
+        158
+      ],
+      "text": "Apple "
+    },
+    {
+      "id": 16,
+      "bbox": [
+        71,
+        144,
+        141,
+        158
+      ],
+      "text": "Computer, "
+    },
+    {
+      "id": 17,
+      "bbox": [
+        141,
+        144,
+        164,
+        158
+      ],
+      "text": "Inc."
+    },
+    {
+      "id": 18,
+      "bbox": [
+        30,
+        188,
+        78,
+        202
+      ],
+      "text": "Faktura"
+    },
+    {
+      "id": 19,
+      "bbox": [
+        88,
+        188,
+        291,
+        202
+      ],
+      "text": "5e7bf6c4-867c-4307-9c05-62a373227bdb"
+    },
+    {
+      "id": 20,
+      "bbox": [
+        328,
+        188,
+        390,
+        201
+      ],
+      "text": "03.05.2013"
+    },
+    {
+      "id": 21,
+      "bbox": [
+        30,
+        232,
+        68,
+        245
+      ],
+      "text": "Single "
+    },
+    {
+      "id": 22,
+      "bbox": [
+        68,
+        232,
+        101,
+        245
+      ],
+      "text": "Price "
+    },
+    {
+      "id": 23,
+      "bbox": [
+        101,
+        232,
+        132,
+        245
+      ],
+      "text": "(EUR)"
+    },
+    {
+      "id": 24,
+      "bbox": [
+        150,
+        232,
+        215,
+        245
+      ],
+      "text": "Description"
+    },
+    {
+      "id": 25,
+      "bbox": [
+        270,
+        232,
+        301,
+        245
+      ],
+      "text": "Total "
+    },
+    {
+      "id": 26,
+      "bbox": [
+        301,
+        232,
+        329,
+        245
+      ],
+      "text": "Item "
+    },
+    {
+      "id": 27,
+      "bbox": [
+        329,
+        232,
+        359,
+        245
+      ],
+      "text": "Price"
+    },
+    {
+      "id": 28,
+      "bbox": [
+        30,
+        261,
+        57,
+        273
+      ],
+      "text": "3,399"
+    },
+    {
+      "id": 29,
+      "bbox": [
+        150,
+        261,
+        219,
+        273
+      ],
+      "text": "Coeojaqdbuya"
+    },
+    {
+      "id": 30,
+      "bbox": [
+        270,
+        261,
+        297,
+        273
+      ],
+      "text": "8,133"
+    },
+    {
+      "id": 31,
+      "bbox": [
+        30,
+        284,
+        57,
+        296
+      ],
+      "text": "7,536"
+    },
+    {
+      "id": 32,
+      "bbox": [
+        150,
+        284,
+        223,
+        296
+      ],
+      "text": "Dwgnazxyvdlz"
+    },
+    {
+      "id": 33,
+      "bbox": [
+        270,
+        284,
+        297,
+        296
+      ],
+      "text": "1,935"
+    },
+    {
+      "id": 34,
+      "bbox": [
+        30,
+        307,
+        57,
+        319
+      ],
+      "text": "4,191"
+    },
+    {
+      "id": 35,
+      "bbox": [
+        150,
+        307,
+        221,
+        319
+      ],
+      "text": "Qwpikocfxaen"
+    },
+    {
+      "id": 36,
+      "bbox": [
+        270,
+        307,
+        297,
+        319
+      ],
+      "text": "2,596"
+    },
+    {
+      "id": 37,
+      "bbox": [
+        30,
+        330,
+        57,
+        342
+      ],
+      "text": "4,533"
+    },
+    {
+      "id": 38,
+      "bbox": [
+        150,
+        330,
+        218,
+        342
+      ],
+      "text": "Poorhzrsbpzq"
+    },
+    {
+      "id": 39,
+      "bbox": [
+        270,
+        330,
+        297,
+        342
+      ],
+      "text": "1,782"
+    },
+    {
+      "id": 40,
+      "bbox": [
+        30,
+        353,
+        57,
+        365
+      ],
+      "text": "2,255"
+    },
+    {
+      "id": 41,
+      "bbox": [
+        150,
+        353,
+        219,
+        365
+      ],
+      "text": "Zvvldcbrhqbm"
+    },
+    {
+      "id": 42,
+      "bbox": [
+        270,
+        353,
+        297,
+        365
+      ],
+      "text": "0,710"
+    },
+    {
+      "id": 43,
+      "bbox": [
+        30,
+        395,
+        61,
+        408
+      ],
+      "text": "Total "
+    },
+    {
+      "id": 44,
+      "bbox": [
+        61,
+        395,
+        92,
+        408
+      ],
+      "text": "(EUR)"
+    },
+    {
+      "id": 45,
+      "bbox": [
+        102,
+        395,
+        141,
+        408
+      ],
+      "text": "972,757"
+    }
+  ],
+  "fields": [
+    {
+      "field_name": "SENDER_NAME",
+      "value_id": [
+        12,
+        13,
+        14
+      ],
+      "value_text": "Adesso Bulgaria EOOD",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "SENDER_ADDRESS",
+      "value_id": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value_text": "Bulgaria 90768 Pforzheim Am Jägerhof",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "RECEIVER_NAME",
+      "value_id": [
+        15,
+        16,
+        17
+      ],
+      "value_text": "Apple Computer, Inc.",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "RECEIVER_ADDRESS",
+      "value_id": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "value_text": "Côte d’Ivoire 89520 Sofia Am Klosterhof",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "INVOICE_NUMBER",
+      "value_id": [
+        19
+      ],
+      "value_text": "5e7bf6c4-867c-4307-9c05-62a373227bdb",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "INVOICE_DATE",
+      "value_id": [
+        20
+      ],
+      "value_text": "03.05.2013",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "TOTAL_AMOUNT",
+      "value_id": [
+        45
+      ],
+      "value_text": "972,757",
+      "key_id": [],
+      "key_text": []
+    }
+  ],
+  "global_attributes": {
+    "file_id": "340.png"
+  }
+}

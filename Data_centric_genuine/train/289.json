@@ -1,0 +1,548 @@
+{
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                31,
+                43,
+                97,
+                59
+            ],
+            "text": "Invoice"
+        },
+        {
+            "id": 9,
+            "bbox": [
+                297,
+                92,
+                335,
+                120
+            ],
+            "text": "YOUR"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                343,
+                92,
+                409,
+                120
+            ],
+            "text": "COMPANY"
+        },
+        {
+            "id": 11,
+            "bbox": [
+                415,
+                102,
+                454,
+                111
+            ],
+            "text": "NAME"
+        },
+        {
+            "id": 15,
+            "bbox": [
+                334,
+                106,
+                374,
+                134
+            ],
+            "text": "muEN"
+        },
+        {
+            "id": 16,
+            "bbox": [
+                383,
+                106,
+                421,
+                134
+            ],
+            "text": "TAGLINE"
+        },
+        {
+            "id": 20,
+            "bbox": [
+                30,
+                146,
+                52,
+                154
+            ],
+            "text": "From"
+        },
+        {
+            "id": 24,
+            "bbox": [
+                255,
+                146,
+                268,
+                154
+            ],
+            "text": "For"
+        },
+        {
+            "id": 28,
+            "bbox": [
+                30,
+                161,
+                76,
+                170
+            ],
+            "text": "Business"
+        },
+        {
+            "id": 29,
+            "bbox": [
+                80,
+                163,
+                109,
+                170
+            ],
+            "text": "name"
+        },
+        {
+            "id": 33,
+            "bbox": [
+                254,
+                161,
+                285,
+                171
+            ],
+            "text": "Client"
+        },
+        {
+            "id": 34,
+            "bbox": [
+                288,
+                163,
+                317,
+                170
+            ],
+            "text": "name"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                29,
+                181,
+                89,
+                188
+            ],
+            "text": "youroerstcom"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                254,
+                180,
+                316,
+                188
+            ],
+            "text": "enBenatcm"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                26,
+                183,
+                45,
+                211
+            ],
+            "text": "Your"
+        },
+        {
+            "id": 47,
+            "bbox": [
+                49,
+                183,
+                76,
+                211
+            ],
+            "text": "address"
+        },
+        {
+            "id": 51,
+            "bbox": [
+                254,
+                196,
+                304,
+                202
+            ],
+            "text": "Client address"
+        },
+        {
+            "id": 55,
+            "bbox": [
+                30,
+                211,
+                90,
+                219
+            ],
+            "text": "Pvanase7e%0"
+        },
+        {
+            "id": 59,
+            "bbox": [
+                254,
+                211,
+                313,
+                218
+            ],
+            "text": "Prom"
+        },
+        {
+            "id": 60,
+            "bbox": [
+                278,
+                199,
+                290,
+                227
+            ],
+            "text": "are"
+        },
+        {
+            "id": 61,
+            "bbox": [
+                292,
+                211,
+                313,
+                218
+            ],
+            "text": "sext"
+        },
+        {
+            "id": 65,
+            "bbox": [
+                73,
+                267,
+                102,
+                274
+            ],
+            "text": "ont"
+        },
+        {
+            "id": 69,
+            "bbox": [
+                73,
+                283,
+                118,
+                291
+            ],
+            "text": "onmoy2018"
+        },
+        {
+            "id": 73,
+            "bbox": [
+                73,
+                299,
+                105,
+                306
+            ],
+            "text": "Neo"
+        },
+        {
+            "id": 77,
+            "bbox": [
+                73,
+                314,
+                81,
+                320
+            ],
+            "text": "04"
+        },
+        {
+            "id": 78,
+            "bbox": [
+                85,
+                303,
+                100,
+                331
+            ],
+            "text": "may"
+        },
+        {
+            "id": 79,
+            "bbox": [
+                101,
+                303,
+                118,
+                331
+            ],
+            "text": "2018"
+        },
+        {
+            "id": 83,
+            "bbox": [
+                352,
+                351,
+                359,
+                355
+            ],
+            "text": "="
+        },
+        {
+            "id": 87,
+            "bbox": [
+                422,
+                350,
+                430,
+                354
+            ],
+            "text": "i"
+        },
+        {
+            "id": 91,
+            "bbox": [
+                41,
+                379,
+                75,
+                385
+            ],
+            "text": "hoa"
+        },
+        {
+            "id": 92,
+            "bbox": [
+                81,
+                379,
+                101,
+                385
+            ],
+            "text": "eat"
+        },
+        {
+            "id": 96,
+            "bbox": [
+                47,
+                368,
+                73,
+                374
+            ],
+            "text": "inter"
+        },
+        {
+            "id": 100,
+            "bbox": [
+                333,
+                368,
+                358,
+                374
+            ],
+            "text": "�700"
+        },
+        {
+            "id": 104,
+            "bbox": [
+                424,
+                368,
+                448,
+                374
+            ],
+            "text": "$9300"
+        },
+        {
+            "id": 108,
+            "bbox": [
+                424,
+                400,
+                448,
+                406
+            ],
+            "text": "sa00"
+        },
+        {
+            "id": 112,
+            "bbox": [
+                350,
+                414,
+                380,
+                421
+            ],
+            "text": "rams)"
+        },
+        {
+            "id": 116,
+            "bbox": [
+                423,
+                414,
+                448,
+                420
+            ],
+            "text": "prey"
+        },
+        {
+            "id": 120,
+            "bbox": [
+                362,
+                428,
+                379,
+                434
+            ],
+            "text": "Tea"
+        },
+        {
+            "id": 124,
+            "bbox": [
+                419,
+                428,
+                448,
+                434
+            ],
+            "text": "rosea"
+        },
+        {
+            "id": 128,
+            "bbox": [
+                312,
+                435,
+                357,
+                463
+            ],
+            "text": "Balance"
+        },
+        {
+            "id": 129,
+            "bbox": [
+                363,
+                435,
+                385,
+                463
+            ],
+            "text": "Due"
+        },
+        {
+            "id": 133,
+            "bbox": [
+                408,
+                445,
+                448,
+                454
+            ],
+            "text": "$105.93"
+        },
+        {
+            "id": 137,
+            "bbox": [
+                30,
+                490,
+                50,
+                496
+            ],
+            "text": "ote"
+        },
+        {
+            "id": 138,
+            "bbox": [
+                56,
+                478,
+                66,
+                506
+            ],
+            "text": "any"
+        },
+        {
+            "id": 139,
+            "bbox": [
+                69,
+                490,
+                97,
+                497
+            ],
+            "text": "relent"
+        },
+        {
+            "id": 140,
+            "bbox": [
+                100,
+                489,
+                139,
+                496
+            ],
+            "text": "neem"
+        },
+        {
+            "id": 141,
+            "bbox": [
+                142,
+                490,
+                172,
+                497
+            ],
+            "text": "payment"
+        },
+        {
+            "id": 142,
+            "bbox": [
+                175,
+                491,
+                216,
+                496
+            ],
+            "text": "nsucons"
+        },
+        {
+            "id": 143,
+            "bbox": [
+                221,
+                491,
+                235,
+                496
+            ],
+            "text": "ae"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [28,29],
+            "value_text": ["Business name"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [46,47],
+            "value_text": ["Your address"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [33,34],
+            "value_text": ["Client name"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [51],
+            "value_text": ["Client address"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [77,78,79],
+            "value_text": ["04 may 2018"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [133],
+            "value_text": ["$105.93"],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "289.jpg"
+    }
+}

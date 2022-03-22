@@ -15,7 +15,9 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
     #num_tp = 0
     #num_fn = 0
     res = ''
-    num_correct = 0
+    num_correct_recall = 0
+    #precision
+    num_correct_precision=0
     num_correct_strict = 0
     num_correct_soft = 0
     num_all = grid_table.shape[0] * (model_output_val.shape[-1]-1)
@@ -40,6 +42,7 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
         #for c in test_classes:
         for c in range(1, data_loader.num_classes):
             labels_indexes = np.where(labels_selected == c)[0]
+            #[:] is the array slice syntax for every element in the array
             logits_indexes = np.where(logits_array_selected[:,c] > c_threshold)[0]
             
             labels_words = list(data_loader.index_to_word[i] for i in data_selected[labels_indexes])
@@ -47,22 +50,32 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
             
             label_bbox_ids = label_mapid[c] # GT bbox_ids related to the type of class
             logit_bbox_ids = [bbox_mapid[bbox] for bbox in bbox_id_selected[logits_indexes] if bbox in bbox_mapid]            
-            
+
+            #calculate strict, soft accuracy
             #if np.array_equal(labels_indexes, logits_indexes):
             if set(label_bbox_ids) == set(logit_bbox_ids): # decide as correct when all ids match
                 num_correct_strict += 1  
                 num_correct_soft += 1
             elif set(label_bbox_ids).issubset(set(logit_bbox_ids)): # correct when gt is subset of gt
                 num_correct_soft += 1
+
             try: # calculate prevalence with decimal precision
-                num_correct += np.shape(np.intersect1d(labels_indexes, logits_indexes))[0] / np.shape(labels_indexes)[0]
+                num_correct_recall += np.shape(np.intersect1d(labels_indexes, logits_indexes))[0] / np.shape(labels_indexes)[0]
             except ZeroDivisionError:
                 if np.shape(labels_indexes)[0] == 0:
-                    num_correct += 1
+                    num_correct_recall += 1
                 else:
-                    num_correct += 0        
-            
-            # show results without the <DontCare> class                    
+                    num_correct_recall += 0
+
+            try:# !!!! calculate precision
+                num_correct_precision += np.shape(np.intersect1d(labels_indexes, logits_indexes))[0] / np.shape(logits_indexes)[0]
+            except ZeroDivisionError:
+                if np.shape(labels_indexes)[0] == 0:
+                    num_correct_precision += 1
+                else:
+                    num_correct_precision += 0
+
+                    # show results without the <DontCare> class
             if b==0:
                 res += '\n{}(GT/Inf):\t"'.format(data_loader.classes[c])
                 
@@ -86,10 +99,11 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
                         #res += ' "%s"/%.2f%s, '%(w, logits_flat[i], l)
                         
                 #print(res)
-    prevalence = num_correct / num_all
+    precision = num_correct_precision/ num_all
+    prevalence = num_correct_recall / num_all
     accuracy_strict = num_correct_strict / num_all
     accuracy_soft = num_correct_soft / num_all
-    return prevalence, accuracy_strict, accuracy_soft, res.encode("utf-8")
+    return precision, prevalence, accuracy_strict, accuracy_soft, res.encode("utf-8")
 
 
 def cal_save_results(data_loader, grid_table, gt_classes, model_output_val, label_mapids, bbox_mapids, file_names, save_prefix):
