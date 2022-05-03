@@ -58,7 +58,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=4)
+parser.add_argument('--batch_size', type=int, default=1)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)

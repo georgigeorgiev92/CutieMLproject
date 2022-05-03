@@ -4,6 +4,8 @@
 import numpy as np
 import csv
 from os.path import join
+from sklearn.metrics import precision_score, recall_score, confusion_matrix
+
 try:
     import cv2
 except ImportError:
@@ -24,6 +26,7 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
     for b in range(grid_table.shape[0]):
         data_input_flat = grid_table[b,:,:,0].reshape([-1])
         labels = gt_classes[b,:,:].reshape([-1])
+        # Logit is a function that maps probabilities
         logits = model_output_val[b,:,:,:].reshape([-1, data_loader.num_classes])
         label_mapid = label_mapids[b]
         bbox_mapid = bbox_mapids[b]
@@ -59,15 +62,18 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
             elif set(label_bbox_ids).issubset(set(logit_bbox_ids)): # correct when gt is subset of gt
                 num_correct_soft += 1
 
-            try: # calculate prevalence with decimal precision
+            try: # calculate prevalence/recall with decimal precision
+                #num_correct_precision = recall_score(labels_indexes.shape, logits_indexes.shape, average='macro', labels=np.unique(logits_indexes))
                 num_correct_recall += np.shape(np.intersect1d(labels_indexes, logits_indexes))[0] / np.shape(labels_indexes)[0]
+
             except ZeroDivisionError:
                 if np.shape(labels_indexes)[0] == 0:
                     num_correct_recall += 1
                 else:
                     num_correct_recall += 0
 
-            try:# !!!! calculate precision
+            try:# calculate precision
+                #num_correct_precision = precision_score(labels_indexes.shape, logits_indexes.shape, average='macro', labels=np.unique(logits_indexes))
                 num_correct_precision += np.shape(np.intersect1d(labels_indexes, logits_indexes))[0] / np.shape(logits_indexes)[0]
             except ZeroDivisionError:
                 if np.shape(labels_indexes)[0] == 0:
@@ -78,7 +84,7 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
                     # show results without the <DontCare> class
             if b==0:
                 res += '\n{}(GT/Inf):\t"'.format(data_loader.classes[c])
-                
+
                 # ground truth label
                 res += ' '.join(data_loader.index_to_word[i] for i in data_selected[labels_indexes])
                 res += '" | "'
