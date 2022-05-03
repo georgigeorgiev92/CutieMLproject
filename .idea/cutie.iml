@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/graph/Cutie_Checkpoints_highest_results/REALINVOICES" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (CutieMLproject)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -180,6 +180,7 @@ if __name__ == '__main__':
 
     # training
     loss_curve = []
+    training_precision, validation_precision, test_precision = [], [], []
     training_recall, validation_recall, test_recall = [], [], []
     training_acc_strict, validation_acc_strict, test_acc_strict = [], [], []
     training_acc_soft, validation_acc_soft, test_acc_soft = [], [], []
@@ -277,11 +278,13 @@ if __name__ == '__main__':
                 timer_stop = timeit.default_timer()
                 print('\t >>time per step: %.2fs <<' % (timer_stop - timer_start))
 
-                recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(data['grid_table']),
-                                                                 np.array(data['gt_classes']), model_output_val,
-                                                                 np.array(data['label_mapids']),
-                                                                 np.array(data['bbox_mapids']))
+                precision, recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(data['grid_table']),
+                                                                            np.array(data['gt_classes']),
+                                                                            model_output_val,
+                                                                            np.array(data['label_mapids']),
+                                                                            np.array(data['bbox_mapids']))
                 loss_curve += [total_loss_val]
+                training_precision += [precision]
                 training_recall += [recall]
                 training_acc_strict += [acc_strict]
                 training_acc_soft += [acc_soft]
@@ -295,13 +298,14 @@ if __name__ == '__main__':
                 print('TRAINING ACC CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
                                                          format(i * params.log_disp_step, w) for i, w in
                                                           enumerate(training_acc_strict)]))
-                print('TRAINING ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f)' \
-                      % (recall, acc_strict, acc_soft, max(training_recall), max(training_acc_strict),
-                         max(training_acc_soft)))
-
-            # calculate validation accuracy and display results
+                print(
+                    'TRAINING Statistic (Precision/Recall/Acc): %.3f / %.3f / %.3f (%.3f) | highest %.3f / %.3f / %.3f (%.3f)' \
+                    % (precision, recall, acc_strict, acc_soft, max(training_precision), max(training_recall),
+                       max(training_acc_strict),
+                       max(training_acc_soft)))
+                # calculate validation accuracy and display results
             if iter % params.validation_step == 0 and len(data_loader.validation_docs):
-                recalls, accs_strict, accs_soft = [], [], []
+                precs, recalls, accs_strict, accs_soft = [], [], [], []
                 for _ in range(len(data_loader.validation_docs)):
                     data = data_loader.fetch_validation_data()
                     grid_tables = data['grid_table']
@@ -318,17 +322,21 @@ if __name__ == '__main__':
                         }
                     fetches = [model_output]
                     [model_output_val] = sess.run(fetches=fetches, feed_dict=feed_dict)
-                    recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
-                                                                     np.array(gt_classes), model_output_val,
-                                                                     np.array(data['label_mapids']),
-                                                                     np.array(data['bbox_mapids']))
+                    precision, recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
+                                                                                np.array(gt_classes), model_output_val,
+                                                                                np.array(data['label_mapids']),
+                                                                                np.array(data['bbox_mapids']))
+                    precs += [precision]
                     recalls += [recall]
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
+                precision = sum(precs) / len(precs)
                 recall = sum(recalls) / len(recalls)
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
+
+                validation_precision += [precision]
                 validation_recall += [recall]
                 validation_acc_strict += [acc_strict]
                 validation_acc_soft += [acc_soft]
@@ -347,10 +355,21 @@ if __name__ == '__main__':
                                                               format(i * params.validation_step, w) for i, w in
                                                                enumerate(validation_recall)]))
 
+                print('TRAINING PRECISION CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
+                                                               format(i * params.log_disp_step, w) for i, w in
+                                                                enumerate(training_precision)]))
+
+                print('VALIDATION PRECISION CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
+                                                                 format(i * params.validation_step, w) for i, w in
+                                                                  enumerate(validation_precision)]))
+
                 idx = np.argmax(validation_acc_strict)
-                print('VALIDATION Statistic %d(%d) (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f) \n'
-                      % (iter, idx * params.validation_step, recall, acc_strict, acc_soft,
-                         validation_recall[idx], validation_acc_strict[idx], validation_acc_soft[idx]))
+
+                print(
+                    'VALIDATION Statistic %d(%d) (Precision/Recall/Acc): %.3f / %.3f / %.3f (%.3f) | highest %.3f / %.3f / %.3f (%.3f) \n'
+                    % (iter, idx * params.validation_step, precision, recall, acc_strict, acc_soft,
+                       validation_precision[idx], validation_recall[idx], validation_acc_strict[idx],
+                       validation_acc_soft[idx]))
 
                 # save best performance checkpoint
                 if iter >= params.ckpt_save_step and validation_acc_strict[-1] > max(validation_acc_strict[:-1] + [0]):
@@ -359,10 +378,10 @@ if __name__ == '__main__':
                               iter + 1)
                     print('\nBest up-to-date performance validation checkpoint saved.\n')
 
-            # calculate validation accuracy and display results
+                # calculate validation accuracy and display results
             if params.test_path != '' and iter % params.test_step == 0 and len(data_loader.test_docs):
 
-                recalls, accs_strict, accs_soft = [], [], []
+                precs, recalls, accs_strict, accs_soft = [], [], [], []
                 while True:
                     data = data_loader.fetch_test_data()
                     if data == None:
@@ -381,32 +400,47 @@ if __name__ == '__main__':
                         }
                     fetches = [model_output]
                     [model_output_val] = sess.run(fetches=fetches, feed_dict=feed_dict)
-                    recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
-                                                                     np.array(gt_classes), model_output_val,
-                                                                     np.array(data['label_mapids']),
-                                                                     np.array(data['bbox_mapids']))
+                    precision, recall, acc_strict, acc_soft, res = cal_accuracy(data_loader, np.array(grid_tables),
+                                                                                np.array(gt_classes), model_output_val,
+                                                                                np.array(data['label_mapids']),
+                                                                                np.array(data['bbox_mapids']))
+                    precs += [precision]
                     recalls += [recall]
                     accs_strict += [acc_strict]
                     accs_soft += [acc_soft]
 
+                precision = sum(precs) / len(precs)
                 recall = sum(recalls) / len(recalls)
                 acc_strict = sum(accs_strict) / len(accs_strict)
                 acc_soft = sum(accs_soft) / len(accs_soft)
+
+                test_precision += [precision]
                 test_recall += [recall]
                 test_acc_strict += [acc_strict]
                 test_acc_soft += [acc_soft]
-                idx = np.argmax(test_acc_strict)
-                print('\n TEST ACC (Recall/Acc): %.3f / %.3f (%.3f) | highest %.3f / %.3f (%.3f) \n'
-                      % (recall, acc_strict, acc_soft, test_recall[idx], test_acc_strict[idx], test_acc_soft[idx]))
+                idx_acc_strict = np.argmax(test_acc_strict)
+                idx_acc_soft = np.argmax(test_acc_soft)
+                idx_recall = np.argmax(test_recall)
+                idx_precision = np.argmax(test_precision)
+
+                print(
+                    '\n TEST Statistic (Precision/Recall/Acc): %.3f / %.3f / %.3f (%.3f) | highest %.3f / %.3f / %.3f (%.3f) \n'
+                    % (precision, recall, acc_strict, acc_soft, test_precision[idx_precision], test_recall[idx_recall],
+                       test_acc_strict[idx_acc_strict], test_acc_soft[idx_acc_soft]))
                 print('TEST ACC (STRICT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
                                                               format(i * params.test_step, w) for i, w in
                                                                enumerate(test_acc_strict)]))
-                print('TEST ACC (SOFT) CURVE: ' + ' >'.join(['{:d}:{:.3f}'.
-                                                            format(i * params.test_step, w) for i, w in
-                                                             enumerate(test_acc_soft)]))
+                print('TEST ACC (SOFT) CURVE:'
+                      ' ' + ' >'.join(['{:d}:{:.3f}'.
+                                      format(i * params.test_step, w) for i, w in
+                                       enumerate(test_acc_soft)]))
                 print('TEST RECALL CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
                                                         format(i * params.test_step, w) for i, w in
                                                          enumerate(test_recall)]))
+
+                print('TEST PRECISION CURVE: ' + ' >'.join(['{:d}:{:.2f}'.
+                                                           format(i * params.test_step, w) for i, w in
+                                                            enumerate(test_precision)]))
 
                 # save best performance checkpoint
                 if iter >= params.ckpt_save_step and test_acc_strict[-1] > max(test_acc_strict[:-1] + [0]):
@@ -415,15 +449,15 @@ if __name__ == '__main__':
                               iter + 2)
                     print('\nBest up-to-date performance test checkpoint saved.\n')
 
-            # save checkpoints
+                # save checkpoints
             if iter >= params.log_save_step and iter % params.ckpt_save_step == 0:
                 save_ckpt(sess, params.ckpt_path, params.save_prefix, data_loader, network, num_words, num_classes,
                           iter)
 
-            # save logs
+                # save logs
             if iter >= params.log_save_step and iter % params.log_save_step == 0:
                 summary_writer.add_summary(summary_str, iter + 1)
 
-    pprint(params)
-    pprint('Data rows/cols:{},{}'.format(data_loader.rows, data_loader.cols))
-    summary_writer.close()
+            pprint(params)
+            pprint('Data rows/cols:{},{}'.format(data_loader.rows, data_loader.cols))
+            summary_writer.close()
