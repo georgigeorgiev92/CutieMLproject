@@ -57,7 +57,7 @@ parser.add_argument('--data_augmentation_extra_rows', type=int, default=16)
 parser.add_argument('--data_augmentation_extra_cols', type=int, default=16)
 
 # training
-parser.add_argument('--batch_size', type=int, default=16)
+parser.add_argument('--batch_size', type=int, default=2)
 parser.add_argument('--iterations', type=int, default=40000)
 parser.add_argument('--lr_decay_step', type=int, default=13000)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
@@ -458,6 +458,6 @@ if __name__ == '__main__':
             if iter >= params.log_save_step and iter % params.log_save_step == 0:
                 summary_writer.add_summary(summary_str, iter + 1)
 
-            pprint(params)
-            pprint('Data rows/cols:{},{}'.format(data_loader.rows, data_loader.cols))
-            summary_writer.close()
+    pprint(params)
+    pprint('Data rows/cols:{},{}'.format(data_loader.rows, data_loader.cols))
+    summary_writer.close()

@@ -107,10 +107,10 @@ def cal_accuracy(data_loader, grid_table, gt_classes, model_output_val, label_ma
 
                 # print(res)
     precision = num_correct_precision / num_all
-    prevalence = num_correct_recall / num_all
+    recall = num_correct_recall / num_all
     accuracy_strict = num_correct_strict / num_all
     accuracy_soft = num_correct_soft / num_all
-    return precision, prevalence, accuracy_strict, accuracy_soft, res.encode("utf-8")
+    return precision, recall, accuracy_strict, accuracy_soft, res.encode("utf-8")
 
 
 def cal_save_results(data_loader, grid_table, gt_classes, model_output_val, label_mapids, bbox_mapids, file_names, save_prefix):
