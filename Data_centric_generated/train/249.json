@@ -1,0 +1,399 @@
+{
+    "comment": "some fields are not recognized",
+    "text_boxes": [
+        {
+            "id": 5,
+            "bbox": [
+                143,
+                39,
+                231,
+                56
+            ],
+            "text": "MUZZY"
+        },
+        {
+            "id": 6,
+            "bbox": [
+                244,
+                39,
+                298,
+                56
+            ],
+            "text": "HILL"
+        },
+        {
+            "id": 10,
+            "bbox": [
+                142,
+                67,
+                203,
+                76
+            ],
+            "text": "BESPOKE"
+        },
+        {
+            "id": 11,
+            "bbox": [
+                210,
+                67,
+                281,
+                76
+            ],
+            "text": "CLOTHING"
+        },
+        {
+            "id": 15,
+            "bbox": [
+                256,
+                93,
+                258,
+                96
+            ],
+            "text": "."
+        },
+        {
+            "id": 19,
+            "bbox": [
+                55,
+                140,
+                97,
+                147
+            ],
+            "text": "INVOICE"
+        },
+        {
+            "id": 20,
+            "bbox": [
+                102,
+                140,
+                145,
+                147
+            ],
+            "text": "NUMBER"
+        },
+        {
+            "id": 24,
+            "bbox": [
+                208,
+                140,
+                234,
+                147
+            ],
+            "text": "bATE"
+        },
+        {
+            "id": 25,
+            "bbox": [
+                240,
+                140,
+                276,
+                147
+            ],
+            "text": "Issueo"
+        },
+        {
+            "id": 29,
+            "bbox": [
+                55,
+                153,
+                93,
+                158
+            ],
+            "text": "0030000"
+        },
+        {
+            "id": 33,
+            "bbox": [
+                213,
+                151,
+                267,
+                159
+            ],
+            "text": "March 5, 2019"
+        },
+        {
+            "id": 37,
+            "bbox": [
+                54,
+                224,
+                103,
+                231
+            ],
+            "text": "SHIPPING"
+        },
+        {
+            "id": 38,
+            "bbox": [
+                108,
+                224,
+                155,
+                231
+            ],
+            "text": "ADDRESS"
+        },
+        {
+            "id": 42,
+            "bbox": [
+                207,
+                224,
+                220,
+                231
+            ],
+            "text": "si"
+        },
+        {
+            "id": 46,
+            "bbox": [
+                246,
+                224,
+                269,
+                231
+            ],
+            "text": "To"
+        },
+        {
+            "id": 50,
+            "bbox": [
+                208,
+                235,
+                219,
+                241
+            ],
+            "text": "Bt"
+        },
+        {
+            "id": 54,
+            "bbox": [
+                133,
+                248,
+                135,
+                252
+            ],
+            "text": "x"
+        },
+        {
+            "id": 58,
+            "bbox": [
+                156,
+                247,
+                168,
+                253
+            ],
+            "text": "a0"
+        },
+        {
+            "id": 62,
+            "bbox": [
+                262,
+                250,
+                277,
+                253
+            ],
+            "text": "ieae"
+        },
+        {
+            "id": 66,
+            "bbox": [
+                210,
+                260,
+                215,
+                265
+            ],
+            "text": "(oe)"
+        },
+        {
+            "id": 67,
+            "bbox": [
+                227,
+                259,
+                241,
+                265
+            ],
+            "text": "298"
+        },
+        {
+            "id": 71,
+            "bbox": [
+                261,
+                260,
+                283,
+                266
+            ],
+            "text": "22091"
+        },
+        {
+            "id": 75,
+            "bbox": [
+                55,
+                334,
+                97,
+                341
+            ],
+            "text": "SERVICE"
+        },
+        {
+            "id": 76,
+            "bbox": [
+                103,
+                334,
+                172,
+                341
+            ],
+            "text": "DESCRIPTION"
+        },
+        {
+            "id": 80,
+            "bbox": [
+                217,
+                334,
+                237,
+                340
+            ],
+            "text": "ory"
+        },
+        {
+            "id": 84,
+            "bbox": [
+                253,
+                334,
+                282,
+                340
+            ],
+            "text": "price"
+        },
+        {
+            "id": 88,
+            "bbox": [
+                297,
+                334,
+                329,
+                340
+            ],
+            "text": "TOTAL"
+        },
+        {
+            "id": 92,
+            "bbox": [
+                224,
+                366,
+                232,
+                371
+            ],
+            "text": "ot"
+        },
+        {
+            "id": 96,
+            "bbox": [
+                256,
+                365,
+                280,
+                372
+            ],
+            "text": "$500"
+        },
+        {
+            "id": 100,
+            "bbox": [
+                301,
+                365,
+                313,
+                371
+            ],
+            "text": "ss"
+        },
+        {
+            "id": 104,
+            "bbox": [
+                76,
+                397,
+                86,
+                402
+            ],
+            "text": "tom"
+        },
+        {
+            "id": 108,
+            "bbox": [
+                226,
+                428,
+                229,
+                432
+            ],
+            "text": "o"
+        },
+        {
+            "id": 112,
+            "bbox": [
+                302,
+                426,
+                325,
+                430
+            ],
+            "text": "see"
+        },
+        {
+            "id": 116,
+            "bbox": [
+                300,
+                474,
+                327,
+                480
+            ],
+            "text": "sie"
+        }
+    ],
+    "fields": [
+        {
+            "field_name": "SENDER_NAME",
+            "value_id": [5,6,10,11],
+            "value_text": ["MUZZY HILL BESPOKE CLOTHING"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "SENDER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_NAME",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "RECEIVER_ADDRESS",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_DATE",
+            "value_id": [33],
+            "value_text": ["March 5, 2019"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "INVOICE_NUMBER",
+            "value_id": [29],
+            "value_text": ["0030000"],
+            "key_id": [],
+            "key_text": []
+        },
+        {
+            "field_name": "TOTAL_AMOUNT",
+            "value_id": [],
+            "value_text": [],
+            "key_id": [],
+            "key_text": []
+        }
+    ],
+    "global_attributes": {
+        "file_id": "249.jpg"
+    }
+}

@@ -1,0 +1,405 @@
+{
+  "text_boxes": [
+    {
+      "id": 1,
+      "bbox": [
+        30,
+        30,
+        77,
+        42
+      ],
+      "text": "Botswana "
+    },
+    {
+      "id": 2,
+      "bbox": [
+        77,
+        30,
+        110,
+        42
+      ],
+      "text": "90616 "
+    },
+    {
+      "id": 3,
+      "bbox": [
+        110,
+        30,
+        162,
+        42
+      ],
+      "text": "Pforzheim "
+    },
+    {
+      "id": 4,
+      "bbox": [
+        162,
+        30,
+        182,
+        42
+      ],
+      "text": "Am "
+    },
+    {
+      "id": 5,
+      "bbox": [
+        182,
+        30,
+        225,
+        42
+      ],
+      "text": "Kirchweg"
+    },
+    {
+      "id": 6,
+      "bbox": [
+        30,
+        73,
+        67,
+        85
+      ],
+      "text": "Algeria "
+    },
+    {
+      "id": 7,
+      "bbox": [
+        67,
+        73,
+        100,
+        85
+      ],
+      "text": "89613 "
+    },
+    {
+      "id": 8,
+      "bbox": [
+        100,
+        73,
+        161,
+        85
+      ],
+      "text": "Goeppingen "
+    },
+    {
+      "id": 9,
+      "bbox": [
+        161,
+        73,
+        180,
+        85
+      ],
+      "text": "Am "
+    },
+    {
+      "id": 10,
+      "bbox": [
+        180,
+        73,
+        213,
+        85
+      ],
+      "text": "Himmel"
+    },
+    {
+      "id": 11,
+      "bbox": [
+        30,
+        48,
+        85,
+        63
+      ],
+      "text": "American "
+    },
+    {
+      "id": 12,
+      "bbox": [
+        85,
+        48,
+        124,
+        63
+      ],
+      "text": "Power "
+    },
+    {
+      "id": 13,
+      "bbox": [
+        124,
+        48,
+        188,
+        63
+      ],
+      "text": "Conversion "
+    },
+    {
+      "id": 14,
+      "bbox": [
+        188,
+        48,
+        254,
+        63
+      ],
+      "text": "Corporation"
+    },
+    {
+      "id": 15,
+      "bbox": [
+        30,
+        91,
+        89,
+        106
+      ],
+      "text": "Carpenter "
+    },
+    {
+      "id": 16,
+      "bbox": [
+        89,
+        91,
+        153,
+        106
+      ],
+      "text": "Technology "
+    },
+    {
+      "id": 17,
+      "bbox": [
+        153,
+        91,
+        182,
+        106
+      ],
+      "text": "Corp."
+    },
+    {
+      "id": 18,
+      "bbox": [
+        30,
+        136,
+        77,
+        149
+      ],
+      "text": "Receipt:"
+    },
+    {
+      "id": 19,
+      "bbox": [
+        87,
+        136,
+        286,
+        149
+      ],
+      "text": "2009a117-84b6-488f-b0bb-1cf937c3c71b"
+    },
+    {
+      "id": 20,
+      "bbox": [
+        501,
+        136,
+        555,
+        148
+      ],
+      "text": "21.04.2017"
+    },
+    {
+      "id": 21,
+      "bbox": [
+        30,
+        179,
+        73,
+        193
+      ],
+      "text": "Quantity"
+    },
+    {
+      "id": 22,
+      "bbox": [
+        205,
+        179,
+        261,
+        193
+      ],
+      "text": "Description"
+    },
+    {
+      "id": 23,
+      "bbox": [
+        380,
+        179,
+        405,
+        193
+      ],
+      "text": "Total"
+    },
+    {
+      "id": 24,
+      "bbox": [
+        30,
+        209,
+        57,
+        222
+      ],
+      "text": "3,087"
+    },
+    {
+      "id": 25,
+      "bbox": [
+        205,
+        209,
+        259,
+        222
+      ],
+      "text": "Xsxzijvbvsjr"
+    },
+    {
+      "id": 26,
+      "bbox": [
+        380,
+        209,
+        407,
+        222
+      ],
+      "text": "3,440"
+    },
+    {
+      "id": 27,
+      "bbox": [
+        30,
+        234,
+        57,
+        247
+      ],
+      "text": "2,779"
+    },
+    {
+      "id": 28,
+      "bbox": [
+        205,
+        234,
+        268,
+        247
+      ],
+      "text": "Qcwkrvvctszo"
+    },
+    {
+      "id": 29,
+      "bbox": [
+        380,
+        234,
+        407,
+        247
+      ],
+      "text": "1,868"
+    },
+    {
+      "id": 30,
+      "bbox": [
+        452,
+        277,
+        480,
+        291
+      ],
+      "text": "Total "
+    },
+    {
+      "id": 31,
+      "bbox": [
+        480,
+        277,
+        512,
+        291
+      ],
+      "text": "(RWF)"
+    },
+    {
+      "id": 32,
+      "bbox": [
+        522,
+        277,
+        555,
+        291
+      ],
+      "text": "41,728"
+    }
+  ],
+  "fields": [
+    {
+      "field_name": "SENDER_NAME",
+      "value_id": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "value_text": "American Power Conversion Corporation",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "SENDER_ADDRESS",
+      "value_id": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value_text": "Botswana 90616 Pforzheim Am Kirchweg",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "RECEIVER_NAME",
+      "value_id": [
+        15,
+        16,
+        17
+      ],
+      "value_text": "Carpenter Technology Corp.",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "RECEIVER_ADDRESS",
+      "value_id": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value_text": "Algeria 89613 Goeppingen Am Himmel",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "INVOICE_NUMBER",
+      "value_id": [
+        19
+      ],
+      "value_text": "2009a117-84b6-488f-b0bb-1cf937c3c71b",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "INVOICE_DATE",
+      "value_id": [
+        20
+      ],
+      "value_text": "21.04.2017",
+      "key_id": [],
+      "key_text": []
+    },
+    {
+      "field_name": "TOTAL_AMOUNT",
+      "value_id": [
+        32
+      ],
+      "value_text": "41,728",
+      "key_id": [],
+      "key_text": []
+    }
+  ],
+  "global_attributes": {
+    "file_id": "331.png"
+  }
+}
